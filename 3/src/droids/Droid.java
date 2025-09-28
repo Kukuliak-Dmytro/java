@@ -21,7 +21,14 @@ public abstract class Droid {
     protected List<Effect> activeEffects;
     protected Random random;
     
-    // Конструктор
+    /**
+     * Створює новий екземпляр дроїда з заданими характеристиками
+     * @param name ім'я дроїда
+     * @param health максимальне здоров'я
+     * @param damage базовий урон
+     * @param accuracy точність атак (0.0 - 1.0)
+     * @param speed швидкість для системи ініціативи
+     */
     public Droid(String name, int health, int damage, double accuracy, int speed) {
         this.name = name;
         this.health = health;
@@ -96,6 +103,7 @@ public abstract class Droid {
     
     /**
      * Лікує дроїда на вказану кількість HP
+     * @param amount кількість HP для відновлення
      */
     public void heal(int amount) {
         int oldHealth = health;
@@ -109,6 +117,7 @@ public abstract class Droid {
     
     /**
      * Перевіряє, чи живий дроїд
+     * @return true якщо дроїд живий (HP > 0), інакше false
      */
     public boolean isAlive() {
         return health > 0;
@@ -116,6 +125,7 @@ public abstract class Droid {
     
     /**
      * Застосовує ефект до дроїда
+     * @param effect ефект для застосування
      */
     public void applyEffect(Effect effect) {
         // Видаляємо попередні ефекти того ж типу (якщо потрібно)
@@ -125,7 +135,8 @@ public abstract class Droid {
     }
     
     /**
-     * Видаляє ефект
+     * Видаляє ефект з дроїда
+     * @param effect ефект для видалення
      */
     public void removeEffect(Effect effect) {
         activeEffects.remove(effect);
@@ -202,11 +213,16 @@ public abstract class Droid {
     
     /**
      * Абстрактний метод для спеціальної здібності атаки (реалізується у підкласах)
+     * @param damage базовий урон атаки
+     * @param target ціль атаки
+     * @return модифікований урон після застосування спеціальних здібностей
      */
     protected abstract int applySpecialAttackAbility(int damage, Droid target);
     
     /**
      * Абстрактний метод для спеціальної здібності захисту (реалізується у підкласах)
+     * @param incomingDamage урон, що надходить до дроїда
+     * @return модифікований урон після застосування захисних здібностей
      */
     protected abstract int applySpecialDefenseAbility(int incomingDamage);
     
@@ -235,12 +251,45 @@ public abstract class Droid {
         return String.format("%s: %d/%d HP", name, health, maxHealth);
     }
     
-    // Геттери
+    /**
+     * Отримує ім'я дроїда
+     * @return ім'я дроїда
+     */
     public String getName() { return name; }
+    
+    /**
+     * Отримує поточне здоров'я дроїда
+     * @return поточне значення HP
+     */
     public int getHealth() { return health; }
+    
+    /**
+     * Отримує максимальне здоров'я дроїда
+     * @return максимальне значення HP
+     */
     public int getMaxHealth() { return maxHealth; }
+    
+    /**
+     * Отримує базовий урон дроїда
+     * @return значення базового урону
+     */
     public int getDamage() { return damage; }
+    
+    /**
+     * Отримує точність атак дроїда
+     * @return значення точності (0.0 - 1.0)
+     */
     public double getAccuracy() { return accuracy; }
+    
+    /**
+     * Отримує швидкість дроїда
+     * @return значення швидкості для системи ініціативи
+     */
     public int getSpeed() { return speed; }
+    
+    /**
+     * Отримує копію списку активних ефектів
+     * @return список активних ефектів дроїда
+     */
     public List<Effect> getActiveEffects() { return new ArrayList<>(activeEffects); }
 }

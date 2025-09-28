@@ -13,6 +13,11 @@ public class AssassinDroid extends Droid {
     private static final int POISON_DAMAGE = 10; // Урон від отрути за хід
     private static final int POISON_DURATION = 3; // Тривалість отрути
     
+    /**
+     * Створює новий екземпляр асасина-дроїда з заданим ім'ям
+     * Характеристики: дуже високий урон (50), низьке HP (90), дуже висока точність (0.95), дуже висока швидкість (22)
+     * @param name ім'я дроїда
+     */
     public AssassinDroid(String name) {
         // Характеристики згідно з планом: високий урон, низьке HP, висока точність, висока швидкість
         super(name, 90, 50, 0.95, 22);
@@ -30,6 +35,12 @@ public class AssassinDroid extends Droid {
         return damage;
     }
     
+    /**
+     * Застосовує спеціальні захисні здібності асасина
+     * Має 20% шанс повністю уникнути атаки
+     * @param incomingDamage урон, що надходить
+     * @return 0 якщо атака була уникнена, інакше повний урон
+     */
     @Override
     protected int applySpecialDefenseAbility(int incomingDamage) {
         // Перевіряємо уникнення

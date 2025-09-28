@@ -23,6 +23,10 @@ public class DamageBuffEffect extends Effect {
         return (int) (baseDamage * (1 + damageMultiplier));
     }
     
+    /**
+     * Отримує множник підсилення урону
+     * @return множник урону (наприклад, 0.3 = +30%)
+     */
     public double getDamageMultiplier() {
         return damageMultiplier;
     }

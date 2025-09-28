@@ -59,9 +59,22 @@ public abstract class Effect {
         return duration > 0;
     }
     
-    // Геттери
+    /**
+     * Отримує назву ефекту
+     * @return назва ефекту
+     */
     public String getName() { return name; }
+    
+    /**
+     * Отримує тривалість ефекту в ходах
+     * @return кількість ходів до закінчення ефекту
+     */
     public int getDuration() { return duration; }
+    
+    /**
+     * Отримує тип ефекту
+     * @return тип ефекту (BUFF, DEBUFF, SHIELD, тощо)
+     */
     public EffectType getType() { return type; }
     
     @Override

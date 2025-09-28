@@ -3,13 +3,18 @@ package droids;
 /**
  * Клас воїна-дроїда з високим уроном та спеціальними здібностями:
  * - Критичний удар (15% шанс подвійного урону)
- * - Берсерк (при HP < 30% отримує +50% урону)
+ * - Берсерк (при HP &lt; 30% отримує +50% урону)
  */
 public class WarriorDroid extends Droid {
     private static final double CRIT_CHANCE = 0.15; // 15% шанс критичного удару
     private static final double BERSERK_THRESHOLD = 0.3; // При 30% HP
     private static final double BERSERK_DAMAGE_BONUS = 0.5; // +50% урону
     
+    /**
+     * Створює новий екземпляр воїна-дроїда з заданим ім'ям
+     * Характеристики: високий урон (35), середнє HP (135), висока точність (0.85), середня швидкість (13)
+     * @param name ім'я дроїда
+     */
     public WarriorDroid(String name) {
         // Характеристики згідно з планом: високий урон, середнє HP, висока точність, середня швидкість
         super(name, 135, 35, 0.85, 13);
@@ -34,6 +39,12 @@ public class WarriorDroid extends Droid {
         return finalDamage;
     }
     
+    /**
+     * Застосовує спеціальні захисні здібності воїна
+     * У воїна немає спеціальних захисних здібностей
+     * @param incomingDamage урон, що надходить
+     * @return незмінений урон
+     */
     @Override
     protected int applySpecialDefenseAbility(int incomingDamage) {
         // У воїна немає спеціальних захисних здібностей
@@ -47,6 +58,10 @@ public class WarriorDroid extends Droid {
         return health < maxHealth * BERSERK_THRESHOLD;
     }
     
+    /**
+     * Отримує розширену інформацію про воїна-дроїда включаючи спеціальні здібності
+     * @return детальна інформація про дроїда та його здібності
+     */
     @Override
     public String getInfo() {
         String baseInfo = super.getInfo();
