@@ -3,6 +3,7 @@ package menu;
 import droids.*;
 import battle.Battle;
 import battle.AutomaticDuel;
+import utils.FileManager;
 import java.util.*;
 
 /**
@@ -55,12 +56,14 @@ public class GameMenu {
             System.out.println("9.  Збалансований дуель 3v3");
             System.out.println("10. Зберегти бій у файл");
             System.out.println("11. Завантажити бій з файлу");
-            System.out.println("12. Показати статистику дроїдів");
-            System.out.println("13. Видалити дроїда");
-            System.out.println("14. Інформація про гру");
+            System.out.println("12. Відтворити поточний бій");
+            System.out.println("13. Керування файлами боїв");
+            System.out.println("14. Показати статистику дроїдів");
+            System.out.println("15. Видалити дроїда");
+            System.out.println("16. Інформація про гру");
             System.out.println("0.  Вихід");
             
-            System.out.print("\nВиберіть опцію (0-14): ");
+            System.out.print("\nВиберіть опцію (0-16): ");
             
             try {
                 int choice = Integer.parseInt(scanner.nextLine());
@@ -77,9 +80,11 @@ public class GameMenu {
                     case 9: startBalancedDuel3v3(); break;
                     case 10: saveBattle(); break;
                     case 11: loadBattle(); break;
-                    case 12: showStatistics(); break;
-                    case 13: deleteDroid(); break;
-                    case 14: showGameInfo(); break;
+                    case 12: replayCurrentBattle(); break;
+                    case 13: manageBattleFiles(); break;
+                    case 14: showStatistics(); break;
+                    case 15: deleteDroid(); break;
+                    case 16: showGameInfo(); break;
                     case 0: 
                         System.out.println("Дякуємо за гру! До побачення!");
                         return;
@@ -87,7 +92,7 @@ public class GameMenu {
                         System.out.println("Невірний вибір! Спробуйте ще раз.");
                 }
             } catch (NumberFormatException e) {
-                System.out.println("Будь ласка, введіть число від 0 до 14!");
+                System.out.println("Будь ласка, введіть число від 0 до 16!");
             }
         }
     }
@@ -353,25 +358,49 @@ public class GameMenu {
      * Зберігає бій у файл
      */
     private void saveBattle() {
+        if (!battle.hasBattleLog()) {
+            System.out.println("✗ Немає бою для збереження! Спочатку проведіть бій.");
+            return;
+        }
+        
+        System.out.println("\n=== ЗБЕРЕЖЕННЯ БОЮ ===");
         System.out.print("Введіть ім'я файлу для збереження (без розширення): ");
         String filename = scanner.nextLine().trim();
         
         if (filename.isEmpty()) {
             filename = "battle_" + System.currentTimeMillis();
+            System.out.println("Використовується ім'я за замовчуванням: " + filename);
         }
         
-        battle.saveBattleLog(filename + ".txt");
+        battle.saveBattleLog(filename);
     }
     
     /**
      * Завантажує бій з файлу
      */
     private void loadBattle() {
-        System.out.print("Введіть ім'я файлу для завантаження: ");
+        System.out.println("\n=== ЗАВАНТАЖЕННЯ БОЮ ===");
+        
+        // Показуємо доступні файли
+        showAvailableBattleFiles();
+        
+        System.out.print("Введіть ім'я файлу для завантаження (або натисніть Enter для скасування): ");
         String filename = scanner.nextLine().trim();
         
-        if (!filename.isEmpty()) {
-            battle.loadBattleLog(filename);
+        if (filename.isEmpty()) {
+            System.out.println("Завантаження скасовано.");
+            return;
+        }
+        
+        battle.loadBattleLog(filename);
+        
+        // Пропонуємо відтворити завантажений бій
+        if (battle.hasBattleLog()) {
+            System.out.print("\nБажаєте відтворити завантажений бій? (y/n): ");
+            String choice = scanner.nextLine().trim().toLowerCase();
+            if (choice.equals("y") || choice.equals("yes") || choice.equals("так")) {
+                battle.replayBattle();
+            }
         }
     }
     
@@ -633,5 +662,184 @@ public class GameMenu {
         droidList.add(new BufferDroid("Бафер-Дзета"));
         droidList.add(new DefenderDroid("Захисник-Ета"));
         droidList.add(new PyromancerDroid("Піромант-Тета"));
+    }
+    
+    /**
+     * Показує доступні файли боїв
+     */
+    private void showAvailableBattleFiles() {
+        List<String> battleFiles = FileManager.listSaveFiles();
+        
+        if (battleFiles.isEmpty()) {
+            System.out.println("Збережених боїв не знайдено.");
+        } else {
+            System.out.println("Доступні файли боїв:");
+            for (int i = 0; i < battleFiles.size(); i++) {
+                String filename = battleFiles.get(i);
+                long size = FileManager.getFileSize(filename);
+                System.out.printf("%d. %s (%d байт)%n", i + 1, filename, size);
+            }
+        }
+    }
+    
+    /**
+     * Відтворює поточний бій
+     */
+    private void replayCurrentBattle() {
+        if (!battle.hasBattleLog()) {
+            System.out.println("✗ Немає поточного бою для відтворення! Спочатку проведіть бій або завантажте збережений.");
+            return;
+        }
+        
+        battle.replayBattle();
+    }
+    
+    /**
+     * Керування файлами боїв
+     */
+    private void manageBattleFiles() {
+        while (true) {
+            System.out.println("\n=== КЕРУВАННЯ ФАЙЛАМИ БОЇВ ===");
+            System.out.println("1. Показати всі збережені бої");
+            System.out.println("2. Видалити файл бою");
+            System.out.println("3. Створити резервну копію");
+            System.out.println("4. Очистити старі файли");
+            System.out.println("5. Показати інформацію про директорію");
+            System.out.println("6. Очистити поточний лог");
+            System.out.println("0. Повернутися до головного меню");
+            
+            System.out.print("\nВиберіть опцію (0-6): ");
+            
+            try {
+                int choice = Integer.parseInt(scanner.nextLine());
+                
+                switch (choice) {
+                    case 1:
+                        showAvailableBattleFiles();
+                        break;
+                        
+                    case 2:
+                        deleteBattleFile();
+                        break;
+                        
+                    case 3:
+                        createBackup();
+                        break;
+                        
+                    case 4:
+                        cleanOldFiles();
+                        break;
+                        
+                    case 5:
+                        FileManager.showSaveDirectoryInfo();
+                        break;
+                        
+                    case 6:
+                        clearCurrentBattle();
+                        break;
+                        
+                    case 0:
+                        return;
+                        
+                    default:
+                        System.out.println("Невірний вибір! Спробуйте ще раз.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Будь ласка, введіть число від 0 до 6!");
+            }
+        }
+    }
+    
+    /**
+     * Видаляє файл бою
+     */
+    private void deleteBattleFile() {
+        showAvailableBattleFiles();
+        
+        System.out.print("Введіть ім'я файлу для видалення (або натисніть Enter для скасування): ");
+        String filename = scanner.nextLine().trim();
+        
+        if (filename.isEmpty()) {
+            System.out.println("Видалення скасовано.");
+            return;
+        }
+        
+        System.out.print("Ви впевнені що хочете видалити файл '" + filename + "'? (y/n): ");
+        String confirmation = scanner.nextLine().trim().toLowerCase();
+        
+        if (confirmation.equals("y") || confirmation.equals("yes") || confirmation.equals("так")) {
+            if (FileManager.deleteFile(filename)) {
+                System.out.println("✓ Файл успішно видалено!");
+            } else {
+                System.out.println("✗ Помилка при видаленні файлу!");
+            }
+        } else {
+            System.out.println("Видалення скасовано.");
+        }
+    }
+    
+    /**
+     * Створює резервну копію файлу
+     */
+    private void createBackup() {
+        showAvailableBattleFiles();
+        
+        System.out.print("Введіть ім'я файлу для створення резервної копії: ");
+        String filename = scanner.nextLine().trim();
+        
+        if (filename.isEmpty()) {
+            System.out.println("Операція скасована.");
+            return;
+        }
+        
+        if (FileManager.backupFile(filename)) {
+            System.out.println("✓ Резервна копія створена успішно!");
+        } else {
+            System.out.println("✗ Помилка при створенні резервної копії!");
+        }
+    }
+    
+    /**
+     * Очищає старі файли
+     */
+    private void cleanOldFiles() {
+        System.out.print("Введіть кількість днів (файли старші за цей період будуть видалені): ");
+        try {
+            int days = Integer.parseInt(scanner.nextLine());
+            if (days < 1) {
+                System.out.println("Кількість днів повинна бути більше 0!");
+                return;
+            }
+            
+            System.out.print("Ви впевнені що хочете видалити всі файли старші " + days + " днів? (y/n): ");
+            String confirmation = scanner.nextLine().trim().toLowerCase();
+            
+            if (confirmation.equals("y") || confirmation.equals("yes") || confirmation.equals("так")) {
+                FileManager.cleanOldFiles(days);
+            } else {
+                System.out.println("Очищення скасовано.");
+            }
+        } catch (NumberFormatException e) {
+            System.out.println("Будь ласка, введіть правильне число!");
+        }
+    }
+    
+    /**
+     * Очищає поточний лог бою
+     */
+    private void clearCurrentBattle() {
+        if (!battle.hasBattleLog()) {
+            System.out.println("✓ Лог бою вже порожній.");
+            return;
+        }
+        
+        System.out.print("Ви впевнені що хочете очистити поточний лог бою? (y/n): ");
+        String confirmation = scanner.nextLine().trim().toLowerCase();
+        
+        if (confirmation.equals("y") || confirmation.equals("yes") || confirmation.equals("так")) {
+            battle.clearBattleLog();
+        } else {
+            System.out.println("Очищення скасовано.");
+        }
     }
 }

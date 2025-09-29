@@ -1,6 +1,8 @@
 package battle;
 
 import droids.*;
+import utils.FileManager;
+import utils.BattleLogger;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -327,35 +329,127 @@ public class Battle {
      * Зберігає лог бою у файл
      */
     public void saveBattleLog(String filename) {
-        // Тут буде реалізація збереження у файл
-        // Поки що просто повідомляємо
-        System.out.println("Лог бою збережено у файл: " + filename);
-        System.out.println("Збережено " + battleLog.size() + " записів");
+        if (battleLog.isEmpty()) {
+            System.out.println("✗ Немає логу для збереження. Спочатку проведіть бій!");
+            return;
+        }
+        
+        // Валідуємо та очищаємо ім'я файлу
+        String cleanFilename = BattleLogger.validateFilename(filename);
+        
+        // Зберігаємо лог бою за допомогою BattleLogger
+        boolean success = BattleLogger.saveBattleLog(battleLog, cleanFilename);
+        
+        if (success) {
+            System.out.println("✓ Лог бою успішно збережено у файл: " + cleanFilename);
+            System.out.println("  Збережено " + battleLog.size() + " записів");
+            System.out.println("  Результат бою: " + (battleResult != null ? battleResult : "Невизначено"));
+        } else {
+            System.out.println("✗ Помилка при збереженні файлу!");
+        }
     }
     
     /**
      * Завантажує лог бою з файлу
      */
     public void loadBattleLog(String filename) {
-        // Тут буде реалізація завантаження з файлу
-        // Поки що просто повідомляємо
-        System.out.println("Завантаження логу бою з файлу: " + filename);
-        System.out.println("Функція буде реалізована пізніше");
+        // Валідуємо ім'я файлу
+        String cleanFilename = filename.endsWith(".txt") ? filename : filename + ".txt";
+        
+        // Перевіряємо чи існує файл
+        if (!FileManager.fileExists(cleanFilename)) {
+            System.out.println("✗ Файл '" + cleanFilename + "' не знайдено!");
+            return;
+        }
+        
+        // Завантажуємо вміст файлу
+        List<String> lines = FileManager.loadFromFile(cleanFilename);
+        
+        if (lines.isEmpty()) {
+            System.out.println("✗ Файл порожній або пошкоджений!");
+            return;
+        }
+        
+        // Очищаємо поточний лог та завантажуємо новий
+        battleLog.clear();
+        battleLog.addAll(lines);
+        battleEnded = true;
+        battleResult = "Завантажено з файлу";
+        
+        System.out.println("✓ Лог бою успішно завантажено з файлу: " + cleanFilename);
+        System.out.println("  Завантажено " + battleLog.size() + " записів");
+        
+        // Показуємо резюме завантаженого бою
+        showBattleSummary();
     }
     
     /**
      * Відтворює збережений бій
      */
     public void replayBattle() {
+        if (battleLog.isEmpty()) {
+            System.out.println("✗ Немає логу для відтворення!");
+            return;
+        }
+        
         System.out.println("=== ВІДТВОРЕННЯ БОЮ ===");
-        for (String logEntry : battleLog) {
-            System.out.println(logEntry);
-            try {
-                Thread.sleep(100); // Пауза між записами
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                break;
+        System.out.println("Натисніть Enter для продовження після кожного запису або введіть 'q' для виходу...\n");
+        
+        try (Scanner scanner = new Scanner(System.in)) {
+            for (String logEntry : battleLog) {
+                System.out.println(logEntry);
+                
+                String input = scanner.nextLine();
+                if ("q".equalsIgnoreCase(input.trim())) {
+                    System.out.println("Відтворення перервано.");
+                    break;
+                }
             }
         }
+        System.out.println("\n=== КІНЕЦЬ ВІДТВОРЕННЯ ===");
+    }
+    
+    /**
+     * Показує резюме завантаженого бою
+     */
+    private void showBattleSummary() {
+        if (battleLog.isEmpty()) {
+            return;
+        }
+        
+        System.out.println("\n=== РЕЗЮМЕ ЗАВАНТАЖЕНОГО БОЮ ===");
+        
+        // Підраховуємо ходи
+        long turnCount = battleLog.stream()
+            .filter(line -> line.contains("--- Хід"))
+            .count();
+            
+        // Шукаємо результат бою
+        String winner = battleLog.stream()
+            .filter(line -> line.contains("переможець") || line.contains("виграв"))
+            .findFirst()
+            .orElse("Результат не визначено");
+            
+        System.out.println("Кількість ходів: " + turnCount);
+        System.out.println("Результат: " + winner);
+        System.out.println("Загальна довжина логу: " + battleLog.size() + " записів");
+        System.out.println("=======================================");
+    }
+    
+    /**
+     * Перевіряє чи є доступний лог бою
+     */
+    public boolean hasBattleLog() {
+        return !battleLog.isEmpty();
+    }
+    
+    /**
+     * Очищає поточний лог бою
+     */
+    public void clearBattleLog() {
+        battleLog.clear();
+        battleEnded = false;
+        battleResult = null;
+        System.out.println("✓ Лог бою очищено");
     }
 }
