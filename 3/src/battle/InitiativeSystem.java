@@ -41,8 +41,11 @@ public class InitiativeSystem {
     public void addParticipant(Droid droid) {
         if (!participants.contains(droid)) {
             participants.add(droid);
-            // Перший хід відразу (час 0)
-            nextTurnTime.put(droid, 0);
+            // Розраховуємо початковий час першого ходу на основі швидкості
+            // Швидші дроїди ходять раніше
+            int speed = droid.getModifiedSpeed();
+            int initialDelay = Math.max(1, BASE_TIME / speed);
+            nextTurnTime.put(droid, initialDelay);
         }
     }
     
