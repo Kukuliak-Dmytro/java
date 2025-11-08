@@ -13,4 +13,9 @@ public class ConsoleMenu {
             command.getInfo();
         }
     }
+    
+    public void handleInput(){
+        // Basic implementation for now
+        System.out.println("Menu displayed. Input handling not yet implemented.");
+    }
 }

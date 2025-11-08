@@ -2,13 +2,14 @@
 import commands.CommandHistory;
 import storage.Storage;
 import ui.ConsoleMenu;
-void main() {
-   
-//    do the rest of the stuff here
-    IO.println("Hello and welcome!");
-    ConsoleMenu menu = new ConsoleMenu();
 
-    menu.showMenu();
-    menu.handleInput();
+public class Main {
+    public static void main(String[] args) {
+        //    do the rest of the stuff here
+        System.out.println("Hello and welcome!");
+        ConsoleMenu menu = new ConsoleMenu();
 
+        menu.showMenu();
+        menu.handleInput();
+    }
 }

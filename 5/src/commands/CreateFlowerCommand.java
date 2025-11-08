@@ -5,7 +5,7 @@ import storage.Storage;
 import entities.Tulip;
 public class CreateFlowerCommand extends BaseCommand  {
 
-    private static final TulipFactory tulipFactory = TulipFactory.getFactory();
+    private static final TulipFactory tulipFactory = new TulipFactory();
 
     @Override
     protected void execute(){

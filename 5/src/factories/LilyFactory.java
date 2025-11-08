@@ -2,15 +2,14 @@ package factories;
 
 
 import entities.Flower;
-import entities.Rose;
+import entities.Lily;
 public class LilyFactory extends AbstractFlowerFactory {
-    private static final LilyFactory instance = new LilyFactory();
-
-
-    private LilyFactory(){
+    public LilyFactory(){
         loadConfigFromJSON();
     }
 
-    public static LilyFactory getFactory(){return instance;}
-
+    @Override
+    public Flower getFlower(){
+        return new Lily();
+    }
 }

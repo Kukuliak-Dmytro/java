@@ -12,6 +12,14 @@ public abstract class AbstractFlowerFactory {
     //    price is measured in UAH
     protected float price;
 
-    public Flower getFlower(){};
-    public void loadConfigFromJSON(){};
+    public abstract Flower getFlower();
+    
+    public void loadConfigFromJSON(){
+        // Placeholder for JSON loading
+        defaultName = "Default";
+        defaultColor = "Default";
+        defaultFreshness = 0.0f;
+        defaultStemLength = 0.0f;
+        price = 0.0f;
+    }
 }

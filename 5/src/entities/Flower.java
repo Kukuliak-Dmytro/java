@@ -10,19 +10,44 @@ public abstract class Flower {
     private float price;
 
 //    constructors
-    public Flower(){};
-    public Flower(String name, String color, float freshness, float stemLength){};
+    public Flower(){
+        this.name = "";
+        this.color = "";
+        this.freshness = 0.0f;
+        this.stemLength = 0.0f;
+        this.price = 0.0f;
+    }
+    
+    public Flower(String name, String color, float freshness, float stemLength){
+        this.name = name;
+        this.color = color;
+        this.freshness = freshness;
+        this.stemLength = stemLength;
+        this.price = 0.0f;
+    }
 
 //    methods
-    public float getFreshness() { };
-    public void setFreshness(float freshness) { };
+    public float getFreshness() {
+        return freshness;
+    }
+    
+    public void setFreshness(float freshness) {
+        this.freshness = freshness;
+    }
 
-    public float getStemLength(){}
-    public void setStemLength(float length){}
+    public float getStemLength(){
+        return stemLength;
+    }
+    
+    public void setStemLength(float length){
+        this.stemLength = length;
+    }
 
-    public float getPrice(){}
-    public void setPrice(float price){}
-
-
-
+    public float getPrice(){
+        return price;
+    }
+    
+    public void setPrice(float price){
+        this.price = price;
+    }
 }
