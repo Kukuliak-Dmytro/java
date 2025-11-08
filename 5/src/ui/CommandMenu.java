@@ -14,6 +14,9 @@ public class CommandMenu {
         commandList.add(new CreateBouquetCommand());
         commandList.add(new AddFlowerToBouquetCommand());
         commandList.add(new RemoveFlowerFromBouquetCommand());
+        commandList.add(new AddAccessoryToBouquetCommand());
+        commandList.add(new SortBouquetByFreshnessCommand());
+        commandList.add(new FindFlowersByStemLengthCommand());
         commandList.add(new UndoCommand());
         commandList.add(new DisplayFlowersCommand());
         commandList.add(new DisplayBouquetsCommand());

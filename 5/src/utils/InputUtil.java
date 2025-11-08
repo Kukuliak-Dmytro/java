@@ -35,6 +35,38 @@ public class InputUtil {
         }
     }
     
+    public static String readString(String prompt) {
+        System.out.print(prompt);
+        System.out.flush();
+        return readLine();
+    }
+    
+    public static float readFloat(String prompt) {
+        System.out.print(prompt);
+        System.out.flush();
+        try {
+            String input = readLine();
+            return Float.parseFloat(input);
+        } catch (NumberFormatException e) {
+            return -1.0f;
+        }
+    }
+    
+    public static float readFloat(String prompt, float min, float max) {
+        System.out.print(prompt);
+        System.out.flush();
+        try {
+            String input = readLine();
+            float value = Float.parseFloat(input);
+            if (value >= min && value <= max) {
+                return value;
+            }
+            return -1.0f;
+        } catch (NumberFormatException e) {
+            return -1.0f;
+        }
+    }
+    
     public static void close() {
         scanner.close();
     }

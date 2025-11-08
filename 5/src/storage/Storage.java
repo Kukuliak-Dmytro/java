@@ -66,6 +66,7 @@ public class Storage {
         for (int i = 0; i < bouquetsInStorage.size(); i++) {
             Bouquet bouquet = bouquetsInStorage.get(i);
             System.out.println((i + 1) + ". Bouquet - Flowers: " + bouquet.getFlowers().size() +
+                             ", Accessories: " + bouquet.getAccessories().size() +
                              ", Price: " + bouquet.getPrice() + " UAH");
             
             if (!bouquet.getFlowers().isEmpty()) {
@@ -76,6 +77,14 @@ public class Storage {
                                          " (" + (flower.name != null ? flower.name : "N/A") + 
                                          ", " + (flower.color != null ? flower.color : "N/A") + ")");
                     }
+                }
+            }
+            
+            if (!bouquet.getAccessories().isEmpty()) {
+                System.out.println("   Accessories:");
+                for (int j = 0; j < bouquet.getAccessories().size(); j++) {
+                    System.out.println("     - " + bouquet.getAccessories().get(j) + 
+                                     " (" + bouquet.getAccessoryPrices().get(j) + " UAH)");
                 }
             }
         }
