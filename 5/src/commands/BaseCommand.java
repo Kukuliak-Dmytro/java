@@ -9,4 +9,10 @@ public abstract class BaseCommand {
     public void undo(){};
 
     public void getInfo(){}
+    
+    // Метод для створення копії команди з поточним станом
+    // Використовується для збереження в історії, щоб уникнути проблеми з перезаписом стану
+    public BaseCommand copy(){
+        return this; // За замовчуванням повертаємо себе (для статичних команд)
+    }
 }

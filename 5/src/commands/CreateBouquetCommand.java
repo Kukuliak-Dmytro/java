@@ -7,6 +7,7 @@ import utils.InputUtil;
 import java.util.List;
 
 public class CreateBouquetCommand extends BaseCommand {
+    private Bouquet bouquet;
 
     @Override
     public void execute(){
@@ -18,7 +19,7 @@ public class CreateBouquetCommand extends BaseCommand {
             return;
         }
         
-        Bouquet bouquet = new Bouquet();
+        bouquet = new Bouquet();
         
         while(true) {
             System.out.println("\nCurrent bouquet:");
@@ -70,8 +71,28 @@ public class CreateBouquetCommand extends BaseCommand {
     }
 
     @Override
+    public void undo(){
+        if (bouquet != null) {
+            Storage storage = Storage.getInstance();
+            storage.removeBouquet(bouquet);
+            List<Flower> flowers = bouquet.getFlowers();
+            for (Flower flower : flowers) {
+                storage.addFlower(flower);
+            }
+            System.out.println("Undone: Bouquet removed and all flowers returned to storage.");
+        }
+    }
+
+    @Override
     public void getInfo(){
         System.out.println("Create Bouquet Command");
+    }
+    
+    @Override
+    public BaseCommand copy(){
+        CreateBouquetCommand copy = new CreateBouquetCommand();
+        copy.bouquet = this.bouquet;
+        return copy;
     }
 }
 

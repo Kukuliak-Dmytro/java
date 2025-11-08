@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CreateFlowerCommand extends BaseCommand  {
+    private Flower flower;
 
     private static final List<AbstractFlowerFactory> factoryList = new ArrayList<>();
 
@@ -32,7 +33,7 @@ public class CreateFlowerCommand extends BaseCommand  {
         
         if (choice > 0) {
             int index = choice - 1;
-            Flower flower = factoryList.get(index).createFlower();
+            flower = factoryList.get(index).createFlower();
             Storage.getInstance().addFlower(flower);
             CommandHistory.getInstance().push(this);
             System.out.println("Flower created successfully!");
@@ -42,8 +43,24 @@ public class CreateFlowerCommand extends BaseCommand  {
     }
 
     @Override
+    public void undo(){
+        if (flower != null) {
+            Storage storage = Storage.getInstance();
+            storage.removeFlower(flower);
+            System.out.println("Undone: Flower removed from storage.");
+        }
+    }
+
+    @Override
     public void getInfo(){
         System.out.println("Create Flower Command");
+    }
+    
+    @Override
+    public BaseCommand copy(){
+        CreateFlowerCommand copy = new CreateFlowerCommand();
+        copy.flower = this.flower;
+        return copy;
     }
 
 }

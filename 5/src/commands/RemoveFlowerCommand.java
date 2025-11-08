@@ -6,6 +6,7 @@ import utils.InputUtil;
 import java.util.List;
 
 public class RemoveFlowerCommand extends BaseCommand {
+    private Flower flower;
 
     @Override
     public void execute(){
@@ -23,8 +24,8 @@ public class RemoveFlowerCommand extends BaseCommand {
         
         if (choice > 0) {
             int index = choice - 1;
-            Flower flowerToRemove = flowers.get(index);
-            storage.removeFlower(flowerToRemove);
+            flower = flowers.get(index);
+            storage.removeFlower(flower);
             CommandHistory.getInstance().push(this);
             System.out.println("Flower removed successfully!");
         } else {
@@ -33,8 +34,24 @@ public class RemoveFlowerCommand extends BaseCommand {
     }
 
     @Override
+    public void undo(){
+        if (flower != null) {
+            Storage storage = Storage.getInstance();
+            storage.addFlower(flower);
+            System.out.println("Undone: Flower added back to storage.");
+        }
+    }
+
+    @Override
     public void getInfo(){
         System.out.println("Remove Flower Command");
+    }
+    
+    @Override
+    public BaseCommand copy(){
+        RemoveFlowerCommand copy = new RemoveFlowerCommand();
+        copy.flower = this.flower;
+        return copy;
     }
 
 }

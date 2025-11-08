@@ -86,6 +86,10 @@ public class Storage {
         bouquetsInStorage.add(bouquet);
     }
     
+    public void removeBouquet(Bouquet bouquet){
+        bouquetsInStorage.remove(bouquet);
+    }
+    
     public void moveFlowerToBouquet(Flower flower, Bouquet bouquet){
         if (flower == null || bouquet == null) {
             return;

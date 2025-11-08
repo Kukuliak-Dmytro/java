@@ -14,7 +14,9 @@ public class CommandHistory {
 
     public void push(BaseCommand command){
         if (command != null) {
-            history.push(command);
+            // Автоматично створюємо копію команди перед збереженням в історії
+            // Це гарантує, що кожна запис в історії має власний стан
+            history.push(command.copy());
         }
     }
 
