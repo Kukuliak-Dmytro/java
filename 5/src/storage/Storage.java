@@ -2,28 +2,30 @@ package storage;
 
 import entities.Flower;
 import utils.JSONUtil;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Storage {
 
 //    the actual instance of the storage
     private static final Storage instance = new Storage();
 
-    private Flower[] flowersInStorage;
-    private Bouquet[] bouquetsInStorage;
+    private List<Flower> flowersInStorage;
+    private List<Bouquet> bouquetsInStorage;
 
-    public Flower[] getFlowersInStorage() {
-        return flowersInStorage != null ? flowersInStorage : new Flower[0];
+    public List<Flower> getFlowersInStorage() {
+        return flowersInStorage;
     }
     
-    public Bouquet[] getBouquetsInStorage(){
-        return bouquetsInStorage != null ? bouquetsInStorage : new Bouquet[0];
+    public List<Bouquet> getBouquetsInStorage(){
+        return bouquetsInStorage;
     }
     
 //    we make this constructor private
 //    singleton pattern
     private Storage(){
-        flowersInStorage = new Flower[0];
-        bouquetsInStorage = new Bouquet[0];
+        flowersInStorage = new ArrayList<>();
+        bouquetsInStorage = new ArrayList<>();
         readFromJson();
     }
 
@@ -31,67 +33,44 @@ public class Storage {
     public static Storage getInstance(){return instance;}
 
     public void addFlower(Flower flower){
-        if (flowersInStorage == null) {
-            flowersInStorage = new Flower[0];
-        }
-        Flower[] newArray = new Flower[flowersInStorage.length + 1];
-        System.arraycopy(flowersInStorage, 0, newArray, 0, flowersInStorage.length);
-        newArray[flowersInStorage.length] = flower;
-        flowersInStorage = newArray;
+        flowersInStorage.add(flower);
     }
     
     public void removeFlower(Flower flower){
-        if (flowersInStorage == null || flowersInStorage.length == 0) {
-            return;
-        }
-        int index = -1;
-        for (int i = 0; i < flowersInStorage.length; i++) {
-            if (flowersInStorage[i] == flower) {
-                index = i;
-                break;
-            }
-        }
-        if (index >= 0) {
-            Flower[] newArray = new Flower[flowersInStorage.length - 1];
-            System.arraycopy(flowersInStorage, 0, newArray, 0, index);
-            System.arraycopy(flowersInStorage, index + 1, newArray, index, flowersInStorage.length - index - 1);
-            flowersInStorage = newArray;
-        }
+        flowersInStorage.remove(flower);
     }
     
     public void displayAllFlowers(){
-        if (flowersInStorage == null || flowersInStorage.length == 0) {
+        if (flowersInStorage.isEmpty()) {
             System.out.println("No flowers in storage.");
             return;
         }
         
-        System.out.println("\nFlowers in storage (" + flowersInStorage.length + "):");
+        System.out.println("\nFlowers in storage (" + flowersInStorage.size() + "):");
         System.out.println("----------------------------------------");
-        for (int i = 0; i < flowersInStorage.length; i++) {
+        for (int i = 0; i < flowersInStorage.size(); i++) {
             System.out.print((i + 1) + ". ");
-            flowersInStorage[i].display();
+            flowersInStorage.get(i).display();
         }
         System.out.println("----------------------------------------");
     }
     
     public void displayAllBouquets(){
-        if (bouquetsInStorage == null || bouquetsInStorage.length == 0) {
+        if (bouquetsInStorage.isEmpty()) {
             System.out.println("No bouquets in storage.");
             return;
         }
         
-        System.out.println("\nBouquets in storage (" + bouquetsInStorage.length + "):");
+        System.out.println("\nBouquets in storage (" + bouquetsInStorage.size() + "):");
         System.out.println("----------------------------------------");
-        for (int i = 0; i < bouquetsInStorage.length; i++) {
-            Bouquet bouquet = bouquetsInStorage[i];
-            System.out.println((i + 1) + ". Bouquet - Flowers: " + 
-                             (bouquet.flowersInBouquet != null ? bouquet.flowersInBouquet.length : 0) +
+        for (int i = 0; i < bouquetsInStorage.size(); i++) {
+            Bouquet bouquet = bouquetsInStorage.get(i);
+            System.out.println((i + 1) + ". Bouquet - Flowers: " + bouquet.getFlowers().size() +
                              ", Price: " + bouquet.getPrice() + " UAH");
             
-            if (bouquet.flowersInBouquet != null && bouquet.flowersInBouquet.length > 0) {
+            if (!bouquet.getFlowers().isEmpty()) {
                 System.out.println("   Flowers in bouquet:");
-                for (int j = 0; j < bouquet.flowersInBouquet.length; j++) {
-                    Flower flower = bouquet.flowersInBouquet[j];
+                for (Flower flower : bouquet.getFlowers()) {
                     if (flower != null) {
                         System.out.println("     - " + flower.getClass().getSimpleName() + 
                                          " (" + (flower.name != null ? flower.name : "N/A") + 
@@ -101,6 +80,18 @@ public class Storage {
             }
         }
         System.out.println("----------------------------------------");
+    }
+    
+    public void addBouquet(Bouquet bouquet){
+        bouquetsInStorage.add(bouquet);
+    }
+    
+    public void moveFlowerToBouquet(Flower flower, Bouquet bouquet){
+        if (flower == null || bouquet == null) {
+            return;
+        }
+        removeFlower(flower);
+        bouquet.addFlower(flower);
     }
     
     private void readFromJson(){

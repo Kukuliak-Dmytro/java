@@ -11,9 +11,7 @@ public class Main {
    
 //    do the rest of the stuff here
         System.out.println("Hello and welcome!");
-    ConsoleMenu menu = new ConsoleMenu();
-
-    menu.showMenu();
-    menu.handleInput();
+        ConsoleMenu menu = new ConsoleMenu();
+        menu.handleInput();
     }
 }

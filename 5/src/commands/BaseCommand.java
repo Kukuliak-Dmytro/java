@@ -6,7 +6,7 @@ public abstract class BaseCommand {
     public void execute(){};
 
     // Метод для скасування дії
-    protected void undo(){};
+    public void undo(){};
 
     public void getInfo(){}
 }

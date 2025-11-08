@@ -11,8 +11,20 @@ public class CommandMenu {
     public CommandMenu(){
         commandList.add(new CreateFlowerCommand());
         commandList.add(new RemoveFlowerCommand());
+        commandList.add(new CreateBouquetCommand());
+        commandList.add(new AddFlowerToBouquetCommand());
+        commandList.add(new RemoveFlowerFromBouquetCommand());
+        commandList.add(new UndoCommand());
         commandList.add(new DisplayFlowersCommand());
         commandList.add(new DisplayBouquetsCommand());
         commandList.add(new DisplayHistoryCommand());
+    }
+    
+    public void showMenu(){
+        System.out.println("\nAvailable commands:");
+        for(int i = 0; i < commandList.size(); i++) {
+            System.out.print((i + 1) + ". ");
+            commandList.get(i).getInfo();
+        }
     }
 }

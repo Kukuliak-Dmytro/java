@@ -8,18 +8,9 @@ import utils.InputUtil;
 public class ConsoleMenu {
     private CommandMenu commandMenu = new CommandMenu();
     
-    public void showMenu(){
-        CommandHistory commandHistory = CommandHistory.getInstance();
-        Storage storage = Storage.getInstance();
-        
-        System.out.println("\nAvailable commands:");
-        for(int i = 0; i < commandMenu.commandList.size(); i++) {
-            System.out.print((i + 1) + ". ");
-            commandMenu.commandList.get(i).getInfo();
-        }
-    }
-    
     public void handleInput(){
+        commandMenu.showMenu();
+        
         while(true) {
             int commandNumber = InputUtil.readInt("\nEnter command number (or 0 to exit): ");
             
@@ -30,9 +21,16 @@ public class ConsoleMenu {
             
             int index = commandNumber - 1;
             if (index >= 0 && index < commandMenu.commandList.size()) {
-                commandMenu.commandList.get(index).execute();
+                BaseCommand command = commandMenu.commandList.get(index);
+                System.out.print("\n>>> Executing: ");
+                command.getInfo();
+                System.out.println();
+                command.execute();
+                System.out.println();
+                commandMenu.showMenu();
             } else {
                 System.out.println("Invalid command number. Please try again.");
+                commandMenu.showMenu();
             }
         }
     }
