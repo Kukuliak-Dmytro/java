@@ -8,7 +8,7 @@ public class RemoveFlowerCommand extends BaseCommand {
     private Flower flower;
 
     @Override
-    protected void execute(){
+    public void execute(){
         Storage.getInstance().removeFlower(flower);
         CommandHistory.getInstance().push(this);
     }

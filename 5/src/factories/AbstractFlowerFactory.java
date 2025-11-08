@@ -1,6 +1,8 @@
 package factories;
 
 import entities.Flower;
+import utils.ConfigLoader;
+import utils.JSONUtil;
 
 public abstract class AbstractFlowerFactory {
     protected String defaultName;
@@ -12,10 +14,39 @@ public abstract class AbstractFlowerFactory {
     //    price is measured in UAH
     protected float price;
 
-    public abstract Flower getFlower();
+    public abstract Flower createFlower();
     
-    public void loadConfigFromJSON(){
-        // Placeholder for JSON loading
+    public void loadConfigFromJSON(String flowerType){
+        String json = ConfigLoader.getConfig();
+        
+        if (json == null) {
+            setDefaults();
+            return;
+        }
+        
+        String key = "\"" + flowerType.toLowerCase() + "\"";
+        int start = json.indexOf(key);
+        if (start == -1) {
+            setDefaults();
+            return;
+        }
+        
+        int objStart = json.indexOf("{", start);
+        int objEnd = JSONUtil.findMatchingBrace(json, objStart);
+        if (objEnd == -1) {
+            setDefaults();
+            return;
+        }
+        
+        String config = json.substring(objStart, objEnd + 1);
+        defaultName = JSONUtil.getString(config, "name");
+        defaultColor = JSONUtil.getString(config, "color");
+        defaultFreshness = JSONUtil.getFloat(config, "freshness");
+        defaultStemLength = JSONUtil.getFloat(config, "stemLength");
+        price = JSONUtil.getFloat(config, "price");
+    }
+    
+    private void setDefaults() {
         defaultName = "Default";
         defaultColor = "Default";
         defaultFreshness = 0.0f;

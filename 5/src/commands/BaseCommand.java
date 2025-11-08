@@ -3,7 +3,7 @@ package commands;
 public abstract class BaseCommand {
 
     // Метод для виконання дії
-    protected void execute(){};
+    public void execute(){};
 
     // Метод для скасування дії
     protected void undo(){};

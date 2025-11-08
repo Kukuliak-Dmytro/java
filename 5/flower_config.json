@@ -1,0 +1,23 @@
+{
+  "tulip": {
+    "name": "Tulip",
+    "color": "Red",
+    "freshness": 24.0,
+    "stemLength": 30.0,
+    "price": 15.0
+  },
+  "lily": {
+    "name": "Lily",
+    "color": "White",
+    "freshness": 36.0,
+    "stemLength": 40.0,
+    "price": 25.0
+  },
+  "rose": {
+    "name": "Rose",
+    "color": "Pink",
+    "freshness": 48.0,
+    "stemLength": 35.0,
+    "price": 20.0
+  }
+}

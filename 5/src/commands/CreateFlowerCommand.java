@@ -8,8 +8,8 @@ public class CreateFlowerCommand extends BaseCommand  {
     private static final TulipFactory tulipFactory = new TulipFactory();
 
     @Override
-    protected void execute(){
-        Tulip flower= tulipFactory.getFlower();
+    public void execute(){
+        Tulip flower = tulipFactory.createFlower();
         Storage.getInstance().addFlower(flower);
         CommandHistory.getInstance().push(this);
     }
