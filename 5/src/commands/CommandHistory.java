@@ -1,6 +1,8 @@
 package commands;
 
 import java.util.Stack;
+import java.util.List;
+import java.util.ArrayList;
 
 public class CommandHistory {
     private static final CommandHistory instance = new CommandHistory();
@@ -18,5 +20,13 @@ public class CommandHistory {
 
     public BaseCommand pop(){
         return history.isEmpty() ? null : history.pop();
+    }
+    
+    public List<BaseCommand> getAllCommands(){
+        return new ArrayList<>(history);
+    }
+    
+    public int size(){
+        return history.size();
     }
 }

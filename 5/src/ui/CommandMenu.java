@@ -13,5 +13,6 @@ public class CommandMenu {
         commandList.add(new RemoveFlowerCommand());
         commandList.add(new DisplayFlowersCommand());
         commandList.add(new DisplayBouquetsCommand());
+        commandList.add(new DisplayHistoryCommand());
     }
 }
