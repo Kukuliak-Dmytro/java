@@ -46,6 +46,28 @@ public abstract class AbstractFlowerFactory {
         price = JSONUtil.getFloat(config, "price");
     }
     
+    protected String getConfigJson() {
+        String json = ConfigLoader.getConfig();
+        if (json == null) return null;
+        
+        String flowerType = getFlowerType();
+        String key = "\"" + flowerType.toLowerCase() + "\"";
+        int start = json.indexOf(key);
+        if (start == -1) return null;
+        
+        int objStart = json.indexOf("{", start);
+        int objEnd = JSONUtil.findMatchingBrace(json, objStart);
+        if (objEnd == -1) return null;
+        
+        return json.substring(objStart, objEnd + 1);
+    }
+    
+    protected abstract String getFlowerType();
+    
+    public void getInfo(){
+        System.out.println(getFlowerType().substring(0, 1).toUpperCase() + getFlowerType().substring(1) + " Factory");
+    }
+    
     private void setDefaults() {
         defaultName = "Default";
         defaultColor = "Default";

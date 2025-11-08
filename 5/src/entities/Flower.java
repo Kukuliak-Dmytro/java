@@ -50,4 +50,13 @@ public abstract class Flower {
     public void setPrice(float price){
         this.price = price;
     }
+    
+    public void display(){
+        System.out.print(getClass().getSimpleName() + 
+                         " - Name: " + (name != null ? name : "N/A") +
+                         ", Color: " + (color != null ? color : "N/A") +
+                         ", Freshness: " + freshness + " hours" +
+                         ", Stem Length: " + stemLength + " cm" +
+                         ", Price: " + price + " UAH");
+    }
 }

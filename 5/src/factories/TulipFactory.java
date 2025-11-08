@@ -3,9 +3,16 @@ package factories;
 import factories.AbstractFlowerFactory;
 import entities.Flower;
 import entities.Tulip;
+import utils.JSONUtil;
+
 public class TulipFactory extends AbstractFlowerFactory {
     public TulipFactory(){
         loadConfigFromJSON("tulip");
+    }
+
+    @Override
+    protected String getFlowerType() {
+        return "tulip";
     }
 
     @Override 
@@ -16,6 +23,12 @@ public class TulipFactory extends AbstractFlowerFactory {
         tulip.setFreshness(defaultFreshness);
         tulip.setStemLength(defaultStemLength);
         tulip.setPrice(price);
+        
+        String config = getConfigJson();
+        if (config != null) {
+            tulip.leavesNumber = JSONUtil.getInt(config, "leavesNumber");
+        }
+        
         return tulip;
     }
 }

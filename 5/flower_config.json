@@ -4,20 +4,23 @@
     "color": "Red",
     "freshness": 24.0,
     "stemLength": 30.0,
-    "price": 15.0
+    "price": 15.0,
+    "leavesNumber": 3
   },
   "lily": {
     "name": "Lily",
     "color": "White",
     "freshness": 36.0,
     "stemLength": 40.0,
-    "price": 25.0
+    "price": 25.0,
+    "bloomLevel": 0.8
   },
   "rose": {
     "name": "Rose",
     "color": "Pink",
     "freshness": 48.0,
     "stemLength": 35.0,
-    "price": 20.0
+    "price": 20.0,
+    "hasThorns": true
   }
 }

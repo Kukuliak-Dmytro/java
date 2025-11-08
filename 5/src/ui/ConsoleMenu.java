@@ -3,7 +3,7 @@ package ui;
 import commands.BaseCommand;
 import storage.Storage;
 import commands.CommandHistory;
-import java.util.Scanner;
+import utils.InputUtil;
 
 public class ConsoleMenu {
     private CommandMenu commandMenu = new CommandMenu();
@@ -20,32 +20,20 @@ public class ConsoleMenu {
     }
     
     public void handleInput(){
-        Scanner scanner = new Scanner(System.in);
-        
         while(true) {
-            System.out.print("\nEnter command number (or 0 to exit): ");
-            String input = scanner.nextLine().trim();
+            int commandNumber = InputUtil.readInt("\nEnter command number (or 0 to exit): ");
             
-            if (input.equals("0")) {
+            if (commandNumber == 0) {
                 System.out.println("Exiting...");
                 break;
             }
             
-            try {
-                int commandNumber = Integer.parseInt(input);
-                int index = commandNumber - 1;
-                
-                if (index >= 0 && index < commandMenu.commandList.size()) {
-                    commandMenu.commandList.get(index).execute();
-                    System.out.println("Command executed successfully.");
-                } else {
-                    System.out.println("Invalid command number. Please try again.");
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Please enter a valid number.");
+            int index = commandNumber - 1;
+            if (index >= 0 && index < commandMenu.commandList.size()) {
+                commandMenu.commandList.get(index).execute();
+            } else {
+                System.out.println("Invalid command number. Please try again.");
             }
         }
-        
-        scanner.close();
     }
 }

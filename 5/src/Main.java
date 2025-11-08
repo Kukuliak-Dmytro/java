@@ -8,12 +8,12 @@ public class Main {
     public static void main(String[] args) {
         // Load config on startup
         ConfigLoader.loadConfig();
-        
-        //    do the rest of the stuff here
+   
+//    do the rest of the stuff here
         System.out.println("Hello and welcome!");
-        ConsoleMenu menu = new ConsoleMenu();
+    ConsoleMenu menu = new ConsoleMenu();
 
-        menu.showMenu();
-        menu.handleInput();
+    menu.showMenu();
+    menu.handleInput();
     }
 }

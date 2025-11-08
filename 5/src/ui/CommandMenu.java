@@ -11,5 +11,7 @@ public class CommandMenu {
     public CommandMenu(){
         commandList.add(new CreateFlowerCommand());
         commandList.add(new RemoveFlowerCommand());
+        commandList.add(new DisplayFlowersCommand());
+        commandList.add(new DisplayBouquetsCommand());
     }
 }
