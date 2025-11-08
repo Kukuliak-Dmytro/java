@@ -1,7 +1,7 @@
 package storage;
 
 import entities.Flower;
-import utils.JSONUtil;
+import utils.StorageParser;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -107,11 +107,13 @@ public class Storage {
         bouquet.addFlower(flower);
     }
     
-    private void readFromJson(){
-        // Placeholder for JSON reading
+    public void readFromJson(){
+        String filePath = "storage.json";
+        StorageParser.parseStorageFromJson(this, filePath);
     }
     
-    private void writeToJson(){
-        // Placeholder for JSON writing
+    public void writeToJson(){
+        String filePath = "storage.json";
+        StorageParser.serializeStorageToJson(this, filePath);
     }
 }

@@ -17,6 +17,8 @@ public class CommandMenu {
         commandList.add(new AddAccessoryToBouquetCommand());
         commandList.add(new SortBouquetByFreshnessCommand());
         commandList.add(new FindFlowersByStemLengthCommand());
+        commandList.add(new LoadFromJsonCommand());
+        commandList.add(new SaveToJsonCommand());
         commandList.add(new UndoCommand());
         commandList.add(new DisplayFlowersCommand());
         commandList.add(new DisplayBouquetsCommand());
