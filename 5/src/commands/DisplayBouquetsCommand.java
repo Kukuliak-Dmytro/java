@@ -11,7 +11,7 @@ public class DisplayBouquetsCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Display Bouquets Command");
+        System.out.println("Display Bouquets");
     }
 }
 

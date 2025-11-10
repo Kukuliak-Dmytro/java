@@ -67,7 +67,7 @@ public class RemoveFlowerFromBouquetCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Remove Flower From Bouquet Command");
+        System.out.println("Remove Flower From Bouquet");
     }
     
     @Override

@@ -25,7 +25,7 @@ public class DisplayHistoryCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Display History Command");
+        System.out.println("Display History");
     }
 }
 

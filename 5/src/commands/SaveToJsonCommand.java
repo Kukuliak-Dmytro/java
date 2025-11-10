@@ -18,7 +18,7 @@ public class SaveToJsonCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Save To JSON Command");
+        System.out.println("Save To JSON");
     }
 }
 

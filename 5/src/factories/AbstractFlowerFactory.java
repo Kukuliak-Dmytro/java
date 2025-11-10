@@ -65,7 +65,7 @@ public abstract class AbstractFlowerFactory {
     protected abstract String getFlowerType();
     
     public void getInfo(){
-        System.out.println(getFlowerType().substring(0, 1).toUpperCase() + getFlowerType().substring(1) + " Factory");
+        System.out.println(getFlowerType().substring(0, 1).toUpperCase() + getFlowerType().substring(1));
     }
     
     private void setDefaults() {

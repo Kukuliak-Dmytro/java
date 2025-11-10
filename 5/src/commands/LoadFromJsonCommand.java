@@ -18,7 +18,7 @@ public class LoadFromJsonCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Load From JSON Command");
+        System.out.println("Load From JSON");
     }
 }
 

@@ -53,7 +53,7 @@ public class CreateFlowerCommand extends BaseCommand  {
 
     @Override
     public void getInfo(){
-        System.out.println("Create Flower Command");
+        System.out.println("Create Flower");
     }
     
     @Override

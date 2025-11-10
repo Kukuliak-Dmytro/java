@@ -25,7 +25,7 @@ public class StorageParser {
         if (flowersStart != -1) {
             int arrayStart = json.indexOf("[", flowersStart);
             if (arrayStart != -1) {
-                int arrayEnd = json.indexOf("]", arrayStart);
+                int arrayEnd = findMatchingBracket(json, arrayStart);
                 if (arrayEnd != -1) {
                     String flowersJson = json.substring(arrayStart + 1, arrayEnd);
                     parseFlowers(storage, flowersJson);
@@ -38,7 +38,7 @@ public class StorageParser {
         if (bouquetsStart != -1) {
             int arrayStart = json.indexOf("[", bouquetsStart);
             if (arrayStart != -1) {
-                int arrayEnd = json.indexOf("]", arrayStart);
+                int arrayEnd = findMatchingBracket(json, arrayStart);
                 if (arrayEnd != -1) {
                     String bouquetsJson = json.substring(arrayStart + 1, arrayEnd);
                     parseBouquets(storage, bouquetsJson);
@@ -127,7 +127,7 @@ public class StorageParser {
         if (flowersStart != -1) {
             int arrayStart = bouquetJson.indexOf("[", flowersStart);
             if (arrayStart != -1) {
-                int arrayEnd = bouquetJson.indexOf("]", arrayStart);
+                int arrayEnd = findMatchingBracket(bouquetJson, arrayStart);
                 if (arrayEnd != -1) {
                     String flowersJson = bouquetJson.substring(arrayStart + 1, arrayEnd);
                     parseBouquetFlowers(bouquet, flowersJson);
@@ -140,7 +140,7 @@ public class StorageParser {
         if (accessoriesStart != -1) {
             int arrayStart = bouquetJson.indexOf("[", accessoriesStart);
             if (arrayStart != -1) {
-                int arrayEnd = bouquetJson.indexOf("]", arrayStart);
+                int arrayEnd = findMatchingBracket(bouquetJson, arrayStart);
                 if (arrayEnd != -1) {
                     String accessoriesJson = bouquetJson.substring(arrayStart + 1, arrayEnd);
                     parseAccessories(bouquet, accessoriesJson);
@@ -226,7 +226,7 @@ public class StorageParser {
     private static String serializeFlower(Flower flower, String indent) {
         StringBuilder json = new StringBuilder();
         json.append(indent).append("{\n");
-        json.append(indent).append("  \"type\": \"").append(flower.getClass().getSimpleName()).append("\",\n");
+        json.append(indent).append("  \"type\": \"").append(flower.getName()).append("\",\n");
         json.append(indent).append("  \"name\": \"").append(flower.name != null ? flower.name : "").append("\",\n");
         json.append(indent).append("  \"color\": \"").append(flower.color != null ? flower.color : "").append("\",\n");
         json.append(indent).append("  \"freshness\": ").append(flower.getFreshness()).append(",\n");
@@ -281,6 +281,19 @@ public class StorageParser {
         json.append(indent).append("}");
         
         return json.toString();
+    }
+    
+    // Helper method to find matching bracket for arrays
+    private static int findMatchingBracket(String json, int start) {
+        int depth = 0;
+        for (int i = start; i < json.length(); i++) {
+            if (json.charAt(i) == '[') depth++;
+            if (json.charAt(i) == ']') {
+                depth--;
+                if (depth == 0) return i;
+            }
+        }
+        return -1;
     }
 }
 

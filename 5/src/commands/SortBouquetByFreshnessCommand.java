@@ -63,7 +63,7 @@ public class SortBouquetByFreshnessCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Sort Bouquet By Freshness Command");
+        System.out.println("Sort Bouquet By Freshness");
     }
     
     @Override

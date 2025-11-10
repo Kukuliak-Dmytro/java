@@ -51,8 +51,12 @@ public abstract class Flower {
         this.price = price;
     }
     
+    public String getName(){
+        return name;
+    }
+    
     public void display(){
-        System.out.print(getClass().getSimpleName() + 
+        System.out.print(getName() + 
                          " - Name: " + (name != null ? name : "N/A") +
                          ", Color: " + (color != null ? color : "N/A") +
                          ", Freshness: " + freshness + " hours" +

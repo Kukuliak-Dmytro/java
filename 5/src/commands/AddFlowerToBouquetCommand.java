@@ -66,7 +66,7 @@ public class AddFlowerToBouquetCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Add Flower To Bouquet Command");
+        System.out.println("Add Flower To Bouquet");
     }
     
     @Override

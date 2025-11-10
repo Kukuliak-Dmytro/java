@@ -90,7 +90,7 @@ public class AddAccessoryToBouquetCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Add Accessory To Bouquet Command");
+        System.out.println("Add Accessory To Bouquet");
     }
     
     @Override

@@ -57,7 +57,7 @@ public class FindFlowersByStemLengthCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Find Flowers By Stem Length Command");
+        System.out.println("Find Flowers By Stem Length");
     }
 }
 

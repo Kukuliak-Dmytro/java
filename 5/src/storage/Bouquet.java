@@ -55,6 +55,12 @@ public class Bouquet {
         System.out.println("----------------------------------------");
     }
     
+    public void displayShort(){
+        System.out.println("Bouquet - Flowers: " + flowersInBouquet.size() +
+                         ", Accessories: " + accessories.size() +
+                         ", Price: " + price + " UAH");
+    }
+    
     public void displayFullDetails(){
         System.out.println("\n=== Bouquet Details ===");
         System.out.println("Total Price: " + price + " UAH");
@@ -114,7 +120,7 @@ public class Bouquet {
         System.out.println("----------------------------------------");
     }
     
-    // Sort flowers by freshness (ascending - freshest first)
+    // freshest first
     public void sortByFreshness(){
         Collections.sort(flowersInBouquet, new Comparator<Flower>() {
             @Override
@@ -125,7 +131,7 @@ public class Bouquet {
         });
     }
     
-    // Find flowers within stem length range
+
     public List<Flower> findFlowersByStemLength(float minLength, float maxLength){
         List<Flower> result = new ArrayList<>();
         for (Flower flower : flowersInBouquet) {

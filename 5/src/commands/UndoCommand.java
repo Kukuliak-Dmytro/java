@@ -20,7 +20,7 @@ public class UndoCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Undo Command");
+        System.out.println("Undo");
     }
 }
 

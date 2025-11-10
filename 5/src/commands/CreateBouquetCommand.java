@@ -23,7 +23,7 @@ public class CreateBouquetCommand extends BaseCommand {
         
         while(true) {
             System.out.println("\nCurrent bouquet:");
-            bouquet.displayAllFlowers();
+            bouquet.displayFullDetails();
             
             System.out.println("\nAvailable flowers in storage:");
             storage.displayAllFlowers();
@@ -85,7 +85,7 @@ public class CreateBouquetCommand extends BaseCommand {
 
     @Override
     public void getInfo(){
-        System.out.println("Create Bouquet Command");
+        System.out.println("Create Bouquet");
     }
     
     @Override

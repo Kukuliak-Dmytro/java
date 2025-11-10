@@ -64,29 +64,8 @@ public class Storage {
         System.out.println("\nBouquets in storage (" + bouquetsInStorage.size() + "):");
         System.out.println("----------------------------------------");
         for (int i = 0; i < bouquetsInStorage.size(); i++) {
-            Bouquet bouquet = bouquetsInStorage.get(i);
-            System.out.println((i + 1) + ". Bouquet - Flowers: " + bouquet.getFlowers().size() +
-                             ", Accessories: " + bouquet.getAccessories().size() +
-                             ", Price: " + bouquet.getPrice() + " UAH");
-            
-            if (!bouquet.getFlowers().isEmpty()) {
-                System.out.println("   Flowers in bouquet:");
-                for (Flower flower : bouquet.getFlowers()) {
-                    if (flower != null) {
-                        System.out.println("     - " + flower.getClass().getSimpleName() + 
-                                         " (" + (flower.name != null ? flower.name : "N/A") + 
-                                         ", " + (flower.color != null ? flower.color : "N/A") + ")");
-                    }
-                }
-            }
-            
-            if (!bouquet.getAccessories().isEmpty()) {
-                System.out.println("   Accessories:");
-                for (int j = 0; j < bouquet.getAccessories().size(); j++) {
-                    System.out.println("     - " + bouquet.getAccessories().get(j) + 
-                                     " (" + bouquet.getAccessoryPrices().get(j) + " UAH)");
-                }
-            }
+            System.out.print((i + 1) + ". ");
+            bouquetsInStorage.get(i).displayShort();
         }
         System.out.println("----------------------------------------");
     }
