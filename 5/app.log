@@ -1,0 +1,16 @@
+2025-11-23 21:23:43.606 [main] INFO  TestLogging - This is an INFO message
+2025-11-23 21:23:43.610 [main] WARN  TestLogging - This is a WARN message
+2025-11-23 21:23:43.610 [main] ERROR TestLogging - This is an ERROR message
+2025-11-23 21:27:31.521 [main] INFO  Main - === Application started ===
+2025-11-23 21:27:38.456 [main] INFO  Main - === Application shutting down ===
+2025-11-23 21:27:59.766 [main] INFO  Main - === Application started ===
+2025-11-23 21:28:02.883 [main] INFO  Main - === Application shutting down ===
+2025-11-23 21:28:54.419 [main] INFO  Main - === Application started ===
+2025-11-23 21:28:58.621 [main] INFO  storage.Storage - Flower created: Tulip (Tulip)
+2025-11-23 21:28:58.623 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-23 21:28:58.624 [main] INFO  storage.Storage - Flower created: Lily (Lily)
+2025-11-23 21:29:00.947 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-23 21:29:09.544 [main] INFO  storage.Storage - Flower added to bouquet: Tulip (Tulip)
+2025-11-23 21:29:10.396 [main] INFO  storage.Storage - Flower added to bouquet: Lily (Lily)
+2025-11-23 21:29:17.441 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-23 21:29:18.487 [main] INFO  Main - === Application shutting down ===

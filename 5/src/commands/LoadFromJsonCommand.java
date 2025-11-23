@@ -14,6 +14,7 @@ public class LoadFromJsonCommand extends BaseCommand {
         System.out.println("Storage loaded successfully!");
         System.out.println("Flowers in storage: " + storage.getFlowersInStorage().size());
         System.out.println("Bouquets in storage: " + storage.getBouquetsInStorage().size());
+        // Logging is handled in Storage.readFromJson()
     }
 
     @Override

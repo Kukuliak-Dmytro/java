@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        
+        <!-- File Appender - logs to file in project root -->
+        <File name="FileAppender" fileName="${sys:user.dir}/app.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    
+    <Loggers>
+        <!-- Root logger - all loggers inherit from this -->
+        <!-- Only logging to file, not console -->
+        <Root level="info">
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+        
+        <!-- You can set specific log levels for packages -->
+        <!-- Uncomment below to enable debug logging for your packages -->
+
+        <Logger name="storage" level="debug"/>
+        <Logger name="commands" level="debug"/>
+        <Logger name="ui" level="debug"/>
+    </Loggers>
+</Configuration>
+

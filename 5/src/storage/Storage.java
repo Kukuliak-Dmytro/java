@@ -2,10 +2,13 @@ package storage;
 
 import entities.Flower;
 import utils.StorageParser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Storage {
+    private static final Logger logger = LogManager.getLogger(Storage.class);
 
 //    the actual instance of the storage
     private static final Storage instance = new Storage();
@@ -33,10 +36,17 @@ public class Storage {
     public static Storage getInstance(){return instance;}
 
     public void addFlower(Flower flower){
+        if (flower == null) {
+            return;
+        }
         flowersInStorage.add(flower);
+        logger.info("Flower created: {} ({})", flower.getName(), flower.getClass().getSimpleName());
     }
     
     public void removeFlower(Flower flower){
+        if (flower == null) {
+            return;
+        }
         flowersInStorage.remove(flower);
     }
     
@@ -71,10 +81,16 @@ public class Storage {
     }
     
     public void addBouquet(Bouquet bouquet){
+        if (bouquet == null) {
+            return;
+        }
         bouquetsInStorage.add(bouquet);
     }
     
     public void removeBouquet(Bouquet bouquet){
+        if (bouquet == null) {
+            return;
+        }
         bouquetsInStorage.remove(bouquet);
     }
     
@@ -84,15 +100,26 @@ public class Storage {
         }
         removeFlower(flower);
         bouquet.addFlower(flower);
+        logger.info("Flower added to bouquet: {} ({})", flower.getName(), flower.getClass().getSimpleName());
     }
     
     public void readFromJson(){
         String filePath = "storage.json";
-        StorageParser.parseStorageFromJson(this, filePath);
+        try {
+            StorageParser.parseStorageFromJson(this, filePath);
+            logger.info("Storage loaded from JSON");
+        } catch (Exception e) {
+            logger.error("Failed to load storage from JSON", e);
+        }
     }
     
     public void writeToJson(){
         String filePath = "storage.json";
-        StorageParser.serializeStorageToJson(this, filePath);
+        try {
+            StorageParser.serializeStorageToJson(this, filePath);
+            logger.info("Storage saved to JSON");
+        } catch (Exception e) {
+            logger.error("Failed to save storage to JSON", e);
+        }
     }
 }

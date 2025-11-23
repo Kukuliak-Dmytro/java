@@ -52,6 +52,7 @@ public class AddFlowerToBouquetCommand extends BaseCommand {
         storage.moveFlowerToBouquet(flower, bouquet);
         CommandHistory.getInstance().push(this);
         System.out.println("Flower added to bouquet successfully!");
+        // Logging is handled in Storage.moveFlowerToBouquet()
     }
 
     @Override

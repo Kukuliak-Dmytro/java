@@ -14,6 +14,7 @@ public class SaveToJsonCommand extends BaseCommand {
         System.out.println("Storage saved successfully to storage.json!");
         System.out.println("Flowers saved: " + storage.getFlowersInStorage().size());
         System.out.println("Bouquets saved: " + storage.getBouquetsInStorage().size());
+        // Logging is handled in Storage.writeToJson()
     }
 
     @Override

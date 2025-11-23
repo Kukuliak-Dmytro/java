@@ -34,9 +34,13 @@ public class CreateFlowerCommand extends BaseCommand  {
         if (choice > 0) {
             int index = choice - 1;
             flower = factoryList.get(index).createFlower();
-            Storage.getInstance().addFlower(flower);
-            CommandHistory.getInstance().push(this);
-            System.out.println("Flower created successfully!");
+            if (flower != null) {
+                Storage.getInstance().addFlower(flower);
+                CommandHistory.getInstance().push(this);
+                System.out.println("Flower created successfully!");
+            } else {
+                System.out.println("Failed to create flower.");
+            }
         } else {
             System.out.println("Invalid choice. No flower created.");
         }
