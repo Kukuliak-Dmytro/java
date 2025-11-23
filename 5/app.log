@@ -14,3 +14,8 @@
 2025-11-23 21:29:10.396 [main] INFO  storage.Storage - Flower added to bouquet: Lily (Lily)
 2025-11-23 21:29:17.441 [main] INFO  storage.Storage - Storage saved to JSON
 2025-11-23 21:29:18.487 [main] INFO  Main - === Application shutting down ===
+2025-11-23 21:42:06.399 [main] INFO  Main - === Application started ===
+2025-11-23 21:42:08.190 [main] INFO  Main - === Application started ===
+2025-11-23 21:42:10.881 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-23 21:42:10.884 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-23 21:42:13.813 [main] INFO  Main - === Application shutting down ===

@@ -1,8 +1,7 @@
 package storage;
 
-import entities.Flower;
-import entities.Rose;
-import entities.Lily;
+import model.Rose;
+import model.Lily;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

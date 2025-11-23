@@ -1,12 +1,12 @@
 package utils;
 
-import entities.Flower;
-import entities.Rose;
-import entities.Lily;
-import entities.Tulip;
+import model.Flower;
+import model.Rose;
+import model.Lily;
+import model.Tulip;
 import storage.Bouquet;
 import storage.Storage;
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class StorageParser {

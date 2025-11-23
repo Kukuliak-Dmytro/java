@@ -1,6 +1,6 @@
 package storage;
 
-import entities.Flower;
+import model.Flower;
 import utils.StorageParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

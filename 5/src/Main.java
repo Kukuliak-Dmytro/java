@@ -1,6 +1,4 @@
 //with the new update, Java allows to NOT write static public void main
-import commands.CommandHistory;
-import storage.Storage;
 import ui.ConsoleMenu;
 import utils.ConfigLoader;
 import org.apache.logging.log4j.LogManager;

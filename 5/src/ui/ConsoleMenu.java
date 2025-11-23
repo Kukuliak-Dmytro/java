@@ -1,7 +1,7 @@
 package ui;
 
-import commands.*;
-import commands.BaseCommand;
+import command.*;
+import command.BaseCommand;
 import utils.InputUtil;
 import java.util.ArrayList;
 import java.util.List;

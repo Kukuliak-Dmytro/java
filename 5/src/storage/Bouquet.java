@@ -1,6 +1,6 @@
 package storage;
 
-import entities.Flower;
+import model.Flower;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

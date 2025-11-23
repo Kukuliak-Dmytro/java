@@ -19,7 +19,7 @@
         <!-- Uncomment below to enable debug logging for your packages -->
 
         <Logger name="storage" level="debug"/>
-        <Logger name="commands" level="debug"/>
+        <Logger name="command" level="debug"/>
         <Logger name="ui" level="debug"/>
     </Loggers>
 </Configuration>
