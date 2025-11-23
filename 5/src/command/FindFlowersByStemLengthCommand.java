@@ -4,9 +4,12 @@ import storage.Storage;
 import storage.Bouquet;
 import model.Flower;
 import utils.InputUtil;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 public class FindFlowersByStemLengthCommand extends BaseCommand {
+    private static final Logger logger = LogManager.getLogger(FindFlowersByStemLengthCommand.class);
 
     @Override
     public void execute(){
@@ -43,6 +46,7 @@ public class FindFlowersByStemLengthCommand extends BaseCommand {
         
         if (foundFlowers.isEmpty()) {
             System.out.println("\nNo flowers found with stem length between " + minLength + " cm and " + maxLength + " cm.");
+            logger.info("Search performed: No flowers found with stem length between {} cm and {} cm", minLength, maxLength);
         } else {
             System.out.println("\nFound " + foundFlowers.size() + " flower(s) with stem length between " + minLength + " cm and " + maxLength + " cm:");
             System.out.println("----------------------------------------");
@@ -52,6 +56,8 @@ public class FindFlowersByStemLengthCommand extends BaseCommand {
                 System.out.println();
             }
             System.out.println("----------------------------------------");
+            logger.info("Search performed: Found {} flower(s) with stem length between {} cm and {} cm", 
+                       foundFlowers.size(), minLength, maxLength);
         }
     }
 

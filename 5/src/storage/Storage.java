@@ -85,6 +85,7 @@ public class Storage {
             return;
         }
         bouquetsInStorage.add(bouquet);
+        logger.info("Bouquet created with {} flowers", bouquet.getFlowers().size());
     }
     
     public void removeBouquet(Bouquet bouquet){

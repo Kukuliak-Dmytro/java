@@ -4,9 +4,12 @@ import storage.Storage;
 import storage.Bouquet;
 import model.Flower;
 import utils.InputUtil;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 public class RemoveFlowerFromBouquetCommand extends BaseCommand {
+    private static final Logger logger = LogManager.getLogger(RemoveFlowerFromBouquetCommand.class);
     private Flower flower;
     private Bouquet bouquet;
 
@@ -53,6 +56,8 @@ public class RemoveFlowerFromBouquetCommand extends BaseCommand {
         storage.addFlower(flower);
         CommandHistory.getInstance().push(this);
         System.out.println("Flower removed from bouquet and returned to storage!");
+        logger.info("Flower removed from bouquet and returned to storage: {} ({})", 
+                   flower.getName(), flower.getClass().getSimpleName());
     }
 
     @Override

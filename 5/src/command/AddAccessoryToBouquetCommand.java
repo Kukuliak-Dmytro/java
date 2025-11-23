@@ -3,9 +3,12 @@ package command;
 import storage.Storage;
 import storage.Bouquet;
 import utils.InputUtil;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 public class AddAccessoryToBouquetCommand extends BaseCommand {
+    private static final Logger logger = LogManager.getLogger(AddAccessoryToBouquetCommand.class);
     private Bouquet bouquet;
     private String accessoryName;
     private float accessoryPrice;
@@ -71,6 +74,7 @@ public class AddAccessoryToBouquetCommand extends BaseCommand {
         CommandHistory.getInstance().push(this);
         System.out.println("Accessory '" + accessoryName + "' added to bouquet successfully!");
         System.out.println("Bouquet total price: " + bouquet.getPrice() + " UAH");
+        logger.info("Accessory added to bouquet: '{}' ({} UAH)", accessoryName, accessoryPrice);
     }
 
     @Override

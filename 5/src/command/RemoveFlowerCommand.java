@@ -3,9 +3,12 @@ package command;
 import storage.Storage;
 import model.Flower;
 import utils.InputUtil;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 public class RemoveFlowerCommand extends BaseCommand {
+    private static final Logger logger = LogManager.getLogger(RemoveFlowerCommand.class);
     private Flower flower;
 
     @Override
@@ -28,6 +31,7 @@ public class RemoveFlowerCommand extends BaseCommand {
             storage.removeFlower(flower);
             CommandHistory.getInstance().push(this);
             System.out.println("Flower removed successfully!");
+            logger.info("Flower removed from storage: {} ({})", flower.getName(), flower.getClass().getSimpleName());
         } else {
             System.out.println("Invalid choice. No flower removed.");
         }

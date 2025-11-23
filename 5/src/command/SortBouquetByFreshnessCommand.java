@@ -3,9 +3,12 @@ package command;
 import storage.Storage;
 import storage.Bouquet;
 import utils.InputUtil;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.List;
 
 public class SortBouquetByFreshnessCommand extends BaseCommand {
+    private static final Logger logger = LogManager.getLogger(SortBouquetByFreshnessCommand.class);
     private Bouquet bouquet;
     private List<model.Flower> originalOrder;
 
@@ -49,6 +52,7 @@ public class SortBouquetByFreshnessCommand extends BaseCommand {
         
         CommandHistory.getInstance().push(this);
         System.out.println("\nBouquet sorted by freshness successfully!");
+        logger.info("Bouquet sorted by freshness: {} flowers sorted", bouquet.getFlowers().size());
     }
 
     @Override
