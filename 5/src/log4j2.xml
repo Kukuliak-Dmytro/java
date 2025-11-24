@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration status="WARN" packages="org.apache.logging.log4j.core,io.sentry.log4j2">
     <Appenders>
         
         <!-- File Appender - logs to file in project root -->
         <File name="FileAppender" fileName="${sys:user.dir}/app.log">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
+        
+        <!-- Sentry Appender - sends errors to Sentry -->
+        <!-- DSN is configured via Sentry.init() in Main.java -->
+        <!-- minimumBreadcrumbLevel: DEBUG logs are sent as breadcrumbs (context) -->
+        <!-- minimumEventLevel: ERROR logs are sent as events to Sentry -->
+        <Sentry name="Sentry"
+                minimumBreadcrumbLevel="DEBUG"
+                minimumEventLevel="ERROR"
+                dsn="https://8a59ad17d62868d154a33357d1c883d6@o4510141446815744.ingest.de.sentry.io/4510419151290448"
+                />
+
     </Appenders>
     
     <Loggers>
         <!-- Root logger - all loggers inherit from this -->
-        <!-- Only logging to file, not console -->
+        <!-- Logs to both file and Sentry -->
         <Root level="info">
             <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="Sentry"/>
         </Root>
         
         <!-- You can set specific log levels for packages -->
-        <!-- Uncomment below to enable debug logging for your packages -->
 
         <Logger name="storage" level="debug"/>
         <Logger name="command" level="debug"/>
         <Logger name="ui" level="debug"/>
     </Loggers>
 </Configuration>
-

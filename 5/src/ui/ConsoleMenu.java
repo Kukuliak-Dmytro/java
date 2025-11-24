@@ -28,6 +28,7 @@ public class ConsoleMenu {
         commandList.add(new DisplayFlowersCommand());
         commandList.add(new DisplayBouquetsCommand());
         commandList.add(new DisplayHistoryCommand());
+        commandList.add(new TestSentryCommand());
     }
     
     public void showMenu(){

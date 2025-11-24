@@ -641,3 +641,87 @@
 2025-11-24 11:19:06.793 [main] INFO  storage.Storage - Flower created: Rose (Rose)
 2025-11-24 11:19:06.795 [main] INFO  storage.Storage - Bouquet created with 0 flowers
 2025-11-24 11:19:06.796 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:47:57.390 [main] WARN  Main - ⚠️ SENTRY_DSN not found in environment variables. Sentry will not capture errors.
+2025-11-24 11:47:57.392 [main] WARN  Main -    Add SENTRY_DSN to your .env file to enable Sentry error tracking.
+2025-11-24 11:47:57.393 [main] INFO  Main - === Application started ===
+2025-11-24 11:47:59.656 [main] WARN  Main - ⚠️ SENTRY_DSN not found in environment variables. Sentry will not capture errors.
+2025-11-24 11:47:59.658 [main] WARN  Main -    Add SENTRY_DSN to your .env file to enable Sentry error tracking.
+2025-11-24 11:47:59.658 [main] INFO  Main - === Application started ===
+2025-11-24 13:07:47.982 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-24 13:07:47.983 [main] INFO  Main - === Application started ===
+2025-11-24 13:07:52.873 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:07:52.873 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:09:14.224 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-24 13:09:14.228 [main] INFO  Main - === Application started ===
+2025-11-24 13:09:24.436 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:09:24.436 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:10:03.174 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-24 13:10:03.177 [main] INFO  Main - === Application started ===
+2025-11-24 13:10:11.753 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:11:48.160 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:11:48.163 [main] INFO  Main - === Application started ===
+2025-11-24 13:11:55.155 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:11:55.155 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:12:16.522 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:12:16.523 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:12:17.049 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:12:17.049 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:12:24.959 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:13:39.446 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:13:39.449 [main] INFO  Main - === Application started ===
+2025-11-24 13:14:15.079 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:14:15.081 [main] INFO  Main - === Application started ===
+2025-11-24 13:14:51.020 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:14:51.020 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:14:52.146 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:17:04.405 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:17:04.407 [main] INFO  Main - === Application started ===
+2025-11-24 13:17:06.979 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:17:06.979 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:17:07.902 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:22:10.720 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:22:10.722 [main] INFO  Main - === Application started ===
+2025-11-24 13:22:12.971 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:22:12.971 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:22:16.936 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:26:50.956 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:26:50.958 [main] INFO  Main - === Application started ===
+2025-11-24 13:26:52.586 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:26:52.587 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:26:53.379 [main] INFO  Main - === Application shutting down ===
