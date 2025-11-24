@@ -31,4 +31,8 @@ public class CommandHistory {
     public int size(){
         return history.size();
     }
+
+    public void clear() {
+        history.clear();
+    }
 }

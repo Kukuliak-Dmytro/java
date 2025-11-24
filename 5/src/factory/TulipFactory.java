@@ -1,7 +1,8 @@
 package factory;
 
+import model.Flower;
 import model.Tulip;
-import utils.JSONUtil;
+import utils.ConfigLoader.FlowerConfig;
 
 public class TulipFactory extends AbstractFlowerFactory {
     public TulipFactory(){
@@ -13,8 +14,8 @@ public class TulipFactory extends AbstractFlowerFactory {
         return "tulip";
     }
 
-    @Override 
-    public Tulip createFlower(){
+    @Override
+    public Flower createFlower(){
         Tulip tulip = new Tulip();
         tulip.name = defaultName;
         tulip.color = defaultColor;
@@ -22,9 +23,9 @@ public class TulipFactory extends AbstractFlowerFactory {
         tulip.setStemLength(defaultStemLength);
         tulip.setPrice(price);
         
-        String config = getConfigJson();
-        if (config != null) {
-            tulip.leavesNumber = JSONUtil.getInt(config, "leavesNumber");
+        FlowerConfig config = getConfigJson();
+        if (config != null && config.leavesNumber != null) {
+            tulip.leavesNumber = config.leavesNumber;
         }
         
         return tulip;

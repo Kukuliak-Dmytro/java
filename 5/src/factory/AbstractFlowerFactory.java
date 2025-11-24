@@ -2,64 +2,34 @@ package factory;
 
 import model.Flower;
 import utils.ConfigLoader;
-import utils.JSONUtil;
+import utils.ConfigLoader.FlowerConfig;
 
 public abstract class AbstractFlowerFactory {
     protected String defaultName;
     protected String defaultColor;
-    //    freshness is measured in hours since being harvested
-
     protected float defaultFreshness;
     protected float defaultStemLength;
-    //    price is measured in UAH
     protected float price;
 
     public abstract Flower createFlower();
     
     public void loadConfigFromJSON(String flowerType){
-        String json = ConfigLoader.getConfig();
+        FlowerConfig config = ConfigLoader.getConfig(flowerType);
         
-        if (json == null) {
+        if (config == null) {
             setDefaults();
             return;
         }
         
-        String key = "\"" + flowerType.toLowerCase() + "\"";
-        int start = json.indexOf(key);
-        if (start == -1) {
-            setDefaults();
-            return;
-        }
-        
-        int objStart = json.indexOf("{", start);
-        int objEnd = JSONUtil.findMatchingBrace(json, objStart);
-        if (objEnd == -1) {
-            setDefaults();
-            return;
-        }
-        
-        String config = json.substring(objStart, objEnd + 1);
-        defaultName = JSONUtil.getString(config, "name");
-        defaultColor = JSONUtil.getString(config, "color");
-        defaultFreshness = JSONUtil.getFloat(config, "freshness");
-        defaultStemLength = JSONUtil.getFloat(config, "stemLength");
-        price = JSONUtil.getFloat(config, "price");
+        defaultName = config.name;
+        defaultColor = config.color;
+        defaultFreshness = config.freshness;
+        defaultStemLength = config.stemLength;
+        price = config.price;
     }
     
-    protected String getConfigJson() {
-        String json = ConfigLoader.getConfig();
-        if (json == null) return null;
-        
-        String flowerType = getFlowerType();
-        String key = "\"" + flowerType.toLowerCase() + "\"";
-        int start = json.indexOf(key);
-        if (start == -1) return null;
-        
-        int objStart = json.indexOf("{", start);
-        int objEnd = JSONUtil.findMatchingBrace(json, objStart);
-        if (objEnd == -1) return null;
-        
-        return json.substring(objStart, objEnd + 1);
+    protected FlowerConfig getConfigJson() {
+        return ConfigLoader.getConfig(getFlowerType());
     }
     
     protected abstract String getFlowerType();

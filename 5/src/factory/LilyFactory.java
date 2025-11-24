@@ -1,9 +1,8 @@
 package factory;
 
-
 import model.Flower;
 import model.Lily;
-import utils.JSONUtil;
+import utils.ConfigLoader.FlowerConfig;
 
 public class LilyFactory extends AbstractFlowerFactory {
     public LilyFactory(){
@@ -24,9 +23,9 @@ public class LilyFactory extends AbstractFlowerFactory {
         lily.setStemLength(defaultStemLength);
         lily.setPrice(price);
         
-        String config = getConfigJson();
-        if (config != null) {
-            lily.bloomLevel = JSONUtil.getFloat(config, "bloomLevel");
+        FlowerConfig config = getConfigJson();
+        if (config != null && config.bloomLevel != null) {
+            lily.bloomLevel = config.bloomLevel;
         }
         
         return lily;

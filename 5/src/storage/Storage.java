@@ -24,6 +24,12 @@ public class Storage {
         return bouquetsInStorage;
     }
     
+    private String jsonFilePath = "storage.json";
+
+    public void setJsonFilePath(String jsonFilePath) {
+        this.jsonFilePath = jsonFilePath;
+    }
+
 //    we make this constructor private
 //    singleton pattern
     private Storage(){
@@ -105,7 +111,7 @@ public class Storage {
     }
     
     public void readFromJson(){
-        String filePath = "storage.json";
+        String filePath = this.jsonFilePath;
         try {
             StorageParser.parseStorageFromJson(this, filePath);
             logger.info("Storage loaded from JSON");
@@ -115,7 +121,7 @@ public class Storage {
     }
     
     public void writeToJson(){
-        String filePath = "storage.json";
+        String filePath = this.jsonFilePath;
         try {
             StorageParser.serializeStorageToJson(this, filePath);
             logger.info("Storage saved to JSON");

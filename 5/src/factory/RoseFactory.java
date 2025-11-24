@@ -1,9 +1,8 @@
 package factory;
 
-
 import model.Flower;
 import model.Rose;
-import utils.JSONUtil;
+import utils.ConfigLoader.FlowerConfig;
 
 public class RoseFactory extends AbstractFlowerFactory {
     public RoseFactory(){
@@ -24,9 +23,9 @@ public class RoseFactory extends AbstractFlowerFactory {
         rose.setStemLength(defaultStemLength);
         rose.setPrice(price);
         
-        String config = getConfigJson();
-        if (config != null) {
-            rose.hasThorns = JSONUtil.getBoolean(config, "hasThorns");
+        FlowerConfig config = getConfigJson();
+        if (config != null && config.hasThorns != null) {
+            rose.hasThorns = config.hasThorns;
         }
         
         return rose;

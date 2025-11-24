@@ -19,3 +19,625 @@
 2025-11-23 21:42:10.881 [main] INFO  storage.Storage - Flower created: Rose (Rose)
 2025-11-23 21:42:10.884 [main] INFO  storage.Storage - Storage loaded from JSON
 2025-11-23 21:42:13.813 [main] INFO  Main - === Application shutting down ===
+2025-11-23 22:31:54.370 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-23 22:31:54.376 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-23 22:31:54.377 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-23 22:31:54.377 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-23 22:31:54.382 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:31:54.384 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-23 22:31:54.390 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:31:54.391 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:31:54.392 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-23 22:31:54.392 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-23 22:31:54.393 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:31:54.395 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-23 22:32:04.447 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-23 22:32:04.458 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-23 22:32:04.459 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-23 22:32:04.459 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-23 22:32:04.467 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:32:04.470 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-23 22:32:04.479 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:32:04.481 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:32:04.481 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-23 22:32:04.482 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-23 22:32:04.484 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:32:04.487 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-23 22:33:23.655 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-23 22:33:23.665 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-23 22:33:23.666 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-23 22:33:23.666 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-23 22:33:23.675 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:33:23.678 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-23 22:33:23.689 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:33:23.691 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:33:23.691 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-23 22:33:23.692 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-23 22:33:23.694 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-23 22:33:23.698 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:38:30.501 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:38:30.510 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 10:38:30.511 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:38:30.511 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:38:30.516 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:38:30.516 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:38:30.524 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:38:30.528 [main] INFO  storage.Storage - Flower created: Default (Rose)
+2025-11-24 10:38:30.533 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:38:30.534 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:38:30.535 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:38:30.604 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:38:30.605 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:38:30.616 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:38:30.618 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:38:30.618 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:38:30.618 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 10:38:30.620 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:38:30.621 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:41:51.074 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:41:51.081 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 10:41:51.082 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:41:51.082 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:41:51.086 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:41:51.087 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:41:51.093 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:41:51.097 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:41:51.099 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 10:41:51.102 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:41:51.103 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:41:51.103 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 10:41:51.109 [main] INFO  storage.Storage - Flower created: Default (Rose)
+2025-11-24 10:41:51.111 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:41:51.113 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 10:41:51.116 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:41:51.118 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:41:51.119 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:41:51.121 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:41:51.123 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 10:41:51.126 [main] INFO  storage.Storage - Flower created: Default (Rose)
+2025-11-24 10:41:51.186 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:41:51.187 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:41:51.194 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:41:51.195 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:41:51.196 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:41:51.196 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 10:41:51.197 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:41:51.199 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:44:57.220 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:44:57.228 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 10:44:57.229 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:44:57.229 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:44:57.233 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:44:57.233 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:44:57.245 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:44:57.246 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:44:57.249 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:44:57.251 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:44:57.256 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 10:44:57.258 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:44:57.261 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:44:57.261 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 10:44:57.265 [main] INFO  storage.Storage - Flower created: Default (Rose)
+2025-11-24 10:44:57.268 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:44:57.273 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 10:44:57.276 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:44:57.277 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:44:57.279 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:44:57.304 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:44:57.306 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 10:44:57.308 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:44:57.310 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:44:57.310 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:44:57.312 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:44:57.314 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 10:44:57.318 [main] INFO  storage.Storage - Flower created: Default (Rose)
+2025-11-24 10:44:57.379 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:44:57.381 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:44:57.387 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:44:57.389 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:44:57.389 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:44:57.389 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 10:44:57.391 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:44:57.393 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:57:33.770 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:57:33.831 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 10:57:33.832 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 10:57:33.832 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 10:57:33.846 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:57:33.849 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:57:33.895 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:57:33.898 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:57:33.901 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:57:33.955 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:57:33.955 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:57:33.976 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:57:33.977 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:57:33.979 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:57:33.981 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:57:33.983 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 10:57:33.986 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:57:33.987 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:57:33.987 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 10:57:33.992 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:57:33.995 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:57:34.000 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 10:57:34.003 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:57:34.005 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:57:34.008 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:57:34.016 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:57:34.017 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 10:57:34.020 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:57:34.021 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:57:34.022 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:57:34.025 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:57:34.026 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 10:57:34.028 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:57:34.100 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:57:34.102 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:57:34.108 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:57:34.109 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:57:34.109 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:57:34.110 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 10:57:34.111 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:57:34.112 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:59:37.985 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:59:38.040 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 10:59:38.040 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 10:59:38.041 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 10:59:38.053 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:59:38.056 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:59:38.115 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:59:38.118 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:59:38.120 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:59:38.180 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:59:38.180 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:59:38.200 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:59:38.201 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:59:38.202 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:59:38.205 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:59:38.208 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 10:59:38.210 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:59:38.211 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:59:38.211 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 10:59:38.216 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:59:38.218 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 10:59:38.223 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 10:59:38.225 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:59:38.227 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 10:59:38.230 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 10:59:38.237 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:59:38.238 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 10:59:38.242 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:59:38.244 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 10:59:38.244 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:59:38.247 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 10:59:38.248 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 10:59:38.252 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 10:59:38.321 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:59:38.323 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 10:59:38.331 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:59:38.333 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:59:38.333 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 10:59:38.334 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 10:59:38.335 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 10:59:38.339 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:01:38.386 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:01:38.440 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:01:38.440 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:01:38.440 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:01:38.448 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:01:38.449 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:01:38.450 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:01:38.450 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:01:38.450 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:01:38.482 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:01:38.488 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:01:38.490 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:01:38.490 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:01:38.539 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:01:38.540 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:01:38.557 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:01:38.557 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:01:38.560 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:01:38.563 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:01:38.564 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 11:01:38.567 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:01:38.568 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:01:38.568 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 11:01:38.571 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:01:38.573 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:01:38.576 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 11:01:38.579 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:01:38.580 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:01:38.581 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:01:38.581 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:01:38.586 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:01:38.587 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 11:01:38.589 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:01:38.591 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:01:38.592 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:01:38.594 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:01:38.595 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 11:01:38.597 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:01:38.664 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:01:38.676 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:01:38.684 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:01:38.686 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:01:38.687 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:01:38.687 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 11:01:38.689 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:01:38.702 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:03:57.977 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:03:57.983 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 11:03:57.984 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:03:57.984 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:03:57.987 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:03:57.987 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:03:57.987 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:03:57.996 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:03:57.997 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:03:57.998 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:03:57.998 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:03:57.998 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:03:58.031 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:03:58.033 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:03:58.034 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:03:58.034 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:03:58.091 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:03:58.091 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:03:58.114 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:03:58.114 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:03:58.116 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:03:58.119 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:03:58.121 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 11:03:58.124 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:03:58.125 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:03:58.125 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 11:03:58.130 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:03:58.132 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:03:58.137 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 11:03:58.141 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:03:58.142 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:03:58.144 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:03:58.145 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:03:58.149 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:03:58.150 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 11:03:58.153 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:03:58.154 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:03:58.155 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:03:58.158 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:03:58.159 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 11:03:58.162 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:03:58.230 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:03:58.232 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:03:58.239 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:03:58.240 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:03:58.240 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:03:58.240 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 11:03:58.242 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:03:58.245 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:21.949 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:07:21.959 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 11:07:21.960 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:07:21.960 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:07:21.963 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:07:21.963 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:07:21.963 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:07:21.974 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:07:21.975 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:07:21.976 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:07:21.976 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:07:21.976 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:07:22.012 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:22.014 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:07:22.015 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:22.015 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:07:22.108 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:07:22.111 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:22.118 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:07:22.121 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:07:22.121 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.121 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 11:07:22.123 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:07:22.125 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:22.215 [main] INFO  storage.Storage - Flower created: Tulip (Tulip)
+2025-11-24 11:07:22.217 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.221 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.226 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Custom' (25.0 UAH)
+2025-11-24 11:07:22.231 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:07:22.231 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.235 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.236 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:07:22.236 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:07:22.244 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.247 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:07:22.248 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 11:07:22.250 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:22.251 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:07:22.253 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 11:07:22.255 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:07:22.258 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:07:22.261 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 11:07:22.283 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:07:22.284 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:07:22.287 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:07:22.287 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:07:22.289 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.289 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 11:07:22.291 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:07:22.292 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:07:22.293 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:07:22.296 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:07:22.300 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:07:22.300 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 11:07:22.303 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:07:22.306 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:07:22.308 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.142 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:13:15.148 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 11:13:15.149 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:13:15.149 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:13:15.151 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:13:15.151 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:13:15.151 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:13:15.162 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:13:15.163 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:13:15.164 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:13:15.164 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:13:15.164 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:13:15.198 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:13:15.200 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:13:15.202 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:13:15.202 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:13:15.297 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:13:15.298 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:13:15.306 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:13:15.308 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:13:15.308 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.308 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 11:13:15.311 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:13:15.312 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:13:15.386 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.386 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.389 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.390 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.392 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.397 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.400 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.401 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.404 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.405 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.408 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.408 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.411 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.411 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.414 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.415 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.417 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.418 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.420 [main] INFO  Main - === Application started ===
+2025-11-24 11:13:15.420 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:13:15.461 [main] INFO  storage.Storage - Flower created: Tulip (Tulip)
+2025-11-24 11:13:15.463 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.468 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.469 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Custom' (25.0 UAH)
+2025-11-24 11:13:15.473 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:13:15.473 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.478 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.478 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:13:15.479 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:13:15.484 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.487 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:13:15.488 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 11:13:15.490 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:13:15.491 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:13:15.492 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 11:13:15.494 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:13:15.495 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:13:15.499 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 11:13:15.506 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:13:15.508 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:13:15.509 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:13:15.509 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:13:15.512 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.513 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 11:13:15.516 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:13:15.517 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:13:15.517 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:13:15.521 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:13:15.525 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:13:15.527 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 11:13:15.529 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:13:15.531 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:13:15.534 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.387 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:15:49.393 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 11:15:49.394 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:15:49.394 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.409 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.430 [main] INFO  storage.Storage - Bouquet created with 5 flowers
+2025-11-24 11:15:49.438 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.440 [main] INFO  storage.Storage - Bouquet created with 5 flowers
+2025-11-24 11:15:49.440 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.446 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.449 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.449 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.450 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.451 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.453 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.454 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.454 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.454 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.459 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.463 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:15:49.463 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:15:49.463 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:15:49.465 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.468 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:15:49.468 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:15:49.468 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:15:49.469 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.473 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.475 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.477 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.477 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.482 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.483 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.488 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.597 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:15:49.600 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.609 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:15:49.612 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:15:49.612 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.612 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 11:15:49.614 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:15:49.615 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.734 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.736 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.738 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.739 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.742 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.747 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.750 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.751 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.754 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.755 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.761 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.762 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.765 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.766 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.789 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.790 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.792 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.792 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.794 [main] INFO  Main - === Application started ===
+2025-11-24 11:15:49.795 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:15:49.829 [main] INFO  storage.Storage - Flower created: Tulip (Tulip)
+2025-11-24 11:15:49.832 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.837 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.840 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Custom' (25.0 UAH)
+2025-11-24 11:15:49.846 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:15:49.846 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.851 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.851 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:15:49.852 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:15:49.859 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.863 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:15:49.865 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 11:15:49.868 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.869 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:15:49.869 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 11:15:49.871 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:15:49.873 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:15:49.877 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 11:15:49.885 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:15:49.888 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:15:49.889 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:15:49.889 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:15:49.892 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.894 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 11:15:49.897 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:15:49.898 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:15:49.898 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:15:49.904 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:15:49.908 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:15:49.910 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 11:15:49.913 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:15:49.914 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:15:49.916 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.390 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:19:06.397 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-24 11:19:06.398 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:19:06.398 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.431 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.435 [main] INFO  storage.Storage - Bouquet created with 5 flowers
+2025-11-24 11:19:06.444 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.446 [main] INFO  storage.Storage - Bouquet created with 5 flowers
+2025-11-24 11:19:06.446 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.453 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.455 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.457 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.457 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.458 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.459 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.459 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.459 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.460 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.465 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.469 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:19:06.470 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:19:06.470 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:19:06.473 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.474 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-24 11:19:06.474 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-24 11:19:06.474 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-24 11:19:06.474 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.479 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.481 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.483 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.483 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.487 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.488 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.494 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.497 [main] INFO  storage.Storage - Flower created: Test (Rose)
+2025-11-24 11:19:06.579 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:19:06.580 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.586 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:19:06.588 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:19:06.588 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.588 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-24 11:19:06.590 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:19:06.592 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.671 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.672 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.674 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.675 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.677 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.681 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.683 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.683 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.686 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.687 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.688 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.689 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.691 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.692 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.694 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.695 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.696 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.696 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.698 [main] INFO  Main - === Application started ===
+2025-11-24 11:19:06.699 [main] INFO  Main - === Application shutting down ===
+2025-11-24 11:19:06.735 [main] INFO  storage.Storage - Flower created: Tulip (Tulip)
+2025-11-24 11:19:06.737 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.740 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.741 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Custom' (25.0 UAH)
+2025-11-24 11:19:06.744 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:19:06.744 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.748 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.749 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:19:06.749 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:19:06.753 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.756 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:19:06.759 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-24 11:19:06.760 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.761 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:19:06.761 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-24 11:19:06.763 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:19:06.765 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-24 11:19:06.769 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-24 11:19:06.774 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:19:06.776 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-24 11:19:06.777 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-24 11:19:06.778 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-24 11:19:06.780 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.781 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-24 11:19:06.782 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:19:06.784 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-24 11:19:06.784 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-24 11:19:06.786 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:19:06.790 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-24 11:19:06.791 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-24 11:19:06.793 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-24 11:19:06.795 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-24 11:19:06.796 [main] INFO  storage.Storage - Bouquet created with 0 flowers
