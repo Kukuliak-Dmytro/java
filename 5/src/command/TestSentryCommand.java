@@ -15,18 +15,46 @@ public class TestSentryCommand extends BaseCommand {
     public void execute() {
         logger.info("Testing Sentry integration...");
         
+        // Debug: Print current Sentry config
         try {
-            // Create a test exception
-            throw new RuntimeException("This is a test exception for Sentry verification");
+            String currentDsn = Sentry.getCurrentHub().getOptions().getDsn();
+            String currentEnv = Sentry.getCurrentHub().getOptions().getEnvironment();
+            System.out.println("DEBUG: Current Sentry DSN: " + currentDsn);
+            
+            // Extract and print Project ID
+            if (currentDsn != null && currentDsn.contains("/")) {
+                String projectId = currentDsn.substring(currentDsn.lastIndexOf('/') + 1);
+                System.out.println("DEBUG: 🔍 CHECK THIS PROJECT ID: " + projectId);
+            }
+            
+            System.out.println("DEBUG: Current Sentry Environment: " + currentEnv);
+        } catch (Exception e) {
+            System.out.println("DEBUG: Could not read Sentry options: " + e.getMessage());
+        }
+        
+        try {
+            // Create a test exception with a unique timestamp to avoid deduplication
+            String uniqueId = java.util.UUID.randomUUID().toString();
+            throw new RuntimeException("Sentry Test Exception " + uniqueId);
         } catch (Exception e) {
             // Log the error (will be captured by Log4j2 Sentry appender)
-            logger.error("Test exception caught and logged", e);
+            logger.error("Test exception caught and logged via Log4j", e);
             
-            // Also send directly to Sentry with additional context
-            Sentry.captureException(e);
+            // We removed the manual Sentry.captureException(e) to avoid "Duplicate Exception" warnings
+            // because the Log4j appender is already sending it.
             
-            System.out.println("✓ Test exception sent to Sentry!");
-            System.out.println("Check your Sentry dashboard to verify the error was captured.");
+            System.out.println("✓ Test exception logged! (ID: " + e.getMessage() + ")");
+            System.out.println("--------------------------------------------------");
+            System.out.println("STATUS: The logs confirm the event was SENT to Sentry.");
+            System.out.println("--------------------------------------------------");
+            System.out.println("If you are on the 'Waiting for events' screen in Sentry:");
+            System.out.println("1. Refresh the page manually.");
+            System.out.println("2. Click 'Take me to Issues' or 'Skip this step' if available.");
+            System.out.println("3. Go to the 'Stats' tab on the left to confirm data arrival.");
+            System.out.println("--------------------------------------------------");
+            
+            // Send a separate simple message to verify connectivity without exception overhead
+            Sentry.captureMessage("Manual test message from Console App " + System.currentTimeMillis());
         }
     }
     

@@ -14,7 +14,6 @@
         <Sentry name="Sentry"
                 minimumBreadcrumbLevel="DEBUG"
                 minimumEventLevel="ERROR"
-                dsn="https://8a59ad17d62868d154a33357d1c883d6@o4510141446815744.ingest.de.sentry.io/4510419151290448"
                 />
 
     </Appenders>

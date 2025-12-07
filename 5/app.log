@@ -725,3 +725,137 @@ java.lang.RuntimeException: This is a test exception for Sentry verification
 	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
 	at Main.main(Main.java:24) [5/:?]
 2025-11-24 13:26:53.379 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:38:33.155 [main] INFO  Main - Sentry initialized successfully with DSN: https://8a...
+2025-11-24 13:38:33.157 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:38:33.157 [main] INFO  Main - === Application started ===
+2025-11-24 13:38:34.960 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:38:34.960 [main] ERROR command.TestSentryCommand - Test exception caught and logged
+java.lang.RuntimeException: This is a test exception for Sentry verification
+	at command.TestSentryCommand.execute(TestSentryCommand.java:20) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:38:49.307 [main] INFO  Main - === Application shutting down ===
+2025-11-24 13:42:00.370 [main] INFO  Main - Sentry initialized successfully with DSN: https://8a...
+2025-11-24 13:42:00.372 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:42:00.372 [main] INFO  Main - === Application started ===
+2025-11-24 13:42:22.659 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:42:22.660 [main] ERROR command.TestSentryCommand - Test exception caught and logged via Log4j
+java.lang.RuntimeException: Sentry Test Exception c7a57308-08b9-429f-b485-7a4b57e24be9
+	at command.TestSentryCommand.execute(TestSentryCommand.java:31) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-24 13:52:10.661 [main] INFO  Main - Sentry initialized successfully with DSN: https://8a...
+2025-11-24 13:52:10.663 [main] INFO  Main - Sentry initialized successfully
+2025-11-24 13:52:10.663 [main] INFO  Main - === Application started ===
+2025-11-24 13:52:12.193 [main] INFO  command.TestSentryCommand - Testing Sentry integration...
+2025-11-24 13:52:12.194 [main] ERROR command.TestSentryCommand - Test exception caught and logged via Log4j
+java.lang.RuntimeException: Sentry Test Exception 2f8a7490-8fdf-49ed-a082-4bef006581e6
+	at command.TestSentryCommand.execute(TestSentryCommand.java:38) [5/:?]
+	at ui.ConsoleMenu.handleInput(ConsoleMenu.java:59) [5/:?]
+	at Main.main(Main.java:24) [5/:?]
+2025-11-25 16:12:49.474 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-25 16:12:49.479 [main] INFO  storage.Storage - Bouquet created with 3 flowers
+2025-11-25 16:12:49.480 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-25 16:12:49.480 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.518 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.523 [main] INFO  storage.Storage - Bouquet created with 5 flowers
+2025-11-25 16:12:49.534 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.536 [main] INFO  storage.Storage - Bouquet created with 5 flowers
+2025-11-25 16:12:49.537 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.543 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.547 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.547 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.547 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.549 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.551 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.551 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.551 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.552 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.557 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.559 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-25 16:12:49.559 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-25 16:12:49.559 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-25 16:12:49.562 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.563 [main] INFO  storage.Storage - Flower created: Red Rose (Rose)
+2025-11-25 16:12:49.563 [main] INFO  storage.Storage - Flower created: White Lily (Lily)
+2025-11-25 16:12:49.564 [main] INFO  storage.Storage - Flower created: Yellow Tulip (Tulip)
+2025-11-25 16:12:49.564 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.569 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.571 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.573 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.573 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.576 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.578 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:49.581 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:49.584 [main] INFO  storage.Storage - Flower created: Test (Rose)
+2025-11-25 16:12:49.701 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-25 16:12:49.723 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.728 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-25 16:12:49.730 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-25 16:12:49.730 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:49.730 [main] INFO  storage.Storage - Flower added to bouquet: Test Rose (Rose)
+2025-11-25 16:12:49.732 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-25 16:12:49.739 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:49.906 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.907 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.907 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.910 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.910 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.911 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.914 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.914 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.919 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.921 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.922 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.922 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.925 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.925 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.926 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.928 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.928 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.933 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.936 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.936 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.937 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.940 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.940 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.940 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.943 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.943 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.943 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.945 [main] WARN  Main - SENTRY_DSN not found in environment variables. Sentry will not be initialized.
+2025-11-25 16:12:49.945 [main] INFO  Main - === Application started ===
+2025-11-25 16:12:49.946 [main] INFO  Main - === Application shutting down ===
+2025-11-25 16:12:49.999 [main] INFO  storage.Storage - Flower created: Tulip (Tulip)
+2025-11-25 16:12:50.001 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.019 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.022 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Custom' (25.0 UAH)
+2025-11-25 16:12:50.026 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-25 16:12:50.026 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.030 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.030 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-25 16:12:50.031 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-25 16:12:50.041 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.044 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-25 16:12:50.052 [main] INFO  command.SortBouquetByFreshnessCommand - Bouquet sorted by freshness: 2 flowers sorted
+2025-11-25 16:12:50.055 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:50.056 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-25 16:12:50.056 [main] INFO  command.RemoveFlowerFromBouquetCommand - Flower removed from bouquet and returned to storage:  (Rose)
+2025-11-25 16:12:50.060 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-25 16:12:50.061 [main] INFO  storage.Storage - Bouquet created with 2 flowers
+2025-11-25 16:12:50.066 [main] INFO  command.FindFlowersByStemLengthCommand - Search performed: Found 1 flower(s) with stem length between 5.0 cm and 20.0 cm
+2025-11-25 16:12:50.081 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-25 16:12:50.083 [main] INFO  storage.Storage - Storage saved to JSON
+2025-11-25 16:12:50.084 [main] INFO  storage.Storage - Flower created: Test Rose (Rose)
+2025-11-25 16:12:50.084 [main] INFO  storage.Storage - Storage loaded from JSON
+2025-11-25 16:12:50.089 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.090 [main] INFO  command.AddAccessoryToBouquetCommand - Accessory added to bouquet: 'Ribbon' (10.0 UAH)
+2025-11-25 16:12:50.092 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-25 16:12:50.093 [main] INFO  storage.Storage - Flower added to bouquet:  (Rose)
+2025-11-25 16:12:50.093 [main] INFO  storage.Storage - Bouquet created with 1 flowers
+2025-11-25 16:12:50.110 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-25 16:12:50.114 [main] INFO  storage.Storage - Flower created:  (Rose)
+2025-11-25 16:12:50.114 [main] INFO  command.RemoveFlowerCommand - Flower removed from storage:  (Rose)
+2025-11-25 16:12:50.116 [main] INFO  storage.Storage - Flower created: Rose (Rose)
+2025-11-25 16:12:50.124 [main] INFO  storage.Storage - Bouquet created with 0 flowers
+2025-11-25 16:12:50.126 [main] INFO  storage.Storage - Bouquet created with 0 flowers

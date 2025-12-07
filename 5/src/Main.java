@@ -52,10 +52,12 @@ public class Main {
                 options.setRelease(release);
             }
             // Enable debug mode for Sentry itself (optional, for troubleshooting)
-            options.setDebug(false);
+            options.setDebug(true);
             // Set traces sample rate (1.0 = 100% of transactions)
             options.setTracesSampleRate(1.0);
         });
+        
+        logger.info("Sentry initialized successfully with DSN: " + (sentryDsn.length() > 10 ? sentryDsn.substring(0, 10) + "..." : "SHORT_DSN"));
         
         logger.info("Sentry initialized successfully");
     }
