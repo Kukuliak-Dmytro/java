@@ -1,0 +1,126 @@
+Java Document Reader Application Plan
+Overview
+A simple Java Swing application that allows users to upload documents (TXT, EPUB, DOC, PDF) and read them in two modes: bionic reading (bold first 2-4 letters) and speed reading (configurable WPM up to 1000).
+
+Project Structure
+reader/
+├── pom.xml (Maven configuration)
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── reader/
+│                   ├── Main.java (entry point)
+│                   ├── BionicReadingPanel.java (bionic reading mode)
+│                   ├── SpeedReadingPanel.java (speed reading mode)
+│                   ├── utils/
+│                   │   ├── DocumentReader.java (main UI window)
+│                   │   └── DocumentParser.java (handles file parsing)
+│                   └── parsers/
+│                       ├── PDFParser.java
+│                       ├── EPUBParser.java
+│                       ├── DOCParser.java
+│                       └── TextExtractor.java
+└── README.md
+Dependencies (Maven)
+Apache PDFBox 2.0.27 (PDF parsing)
+Apache POI 5.2.3 (DOC/DOCX parsing)
+epub4j-core 1.0.0 (EPUB parsing)
+Java Swing (built-in, no dependency needed)
+Implementation Steps
+Phase 1: Project Setup (User Actions)
+IntelliJ IDEA Configuration
+Create new Maven project in IntelliJ IDEA
+Set Java version to 11 or higher
+Configure project SDK
+Enable auto-import for Maven dependencies
+Dependencies Download
+Maven will automatically download dependencies when pom.xml is created
+Verify dependencies in IntelliJ's Maven tool window
+Phase 2: Core Infrastructure (Model Generation)
+Create pom.xml
+Configure Maven project with Java 11+
+Add dependencies: PDFBox, POI, epub4j-core
+Set up build configuration
+Create Main.java
+Entry point with main method
+Initialize Swing UI on EDT
+Launch DocumentReader window
+Create utils/DocumentReader.java
+Main Swing JFrame window
+Menu bar with File > Open
+Tabbed pane for two reading modes
+File upload button/dialog
+Display extracted text
+Phase 3: Document Parsing (Model Generation)
+Create utils/DocumentParser.java
+Factory pattern to detect file type
+Route to appropriate parser based on extension
+Return extracted text as String
+Create parsers/PDFParser.java
+Use PDFBox to extract text from PDF files
+Handle multi-page documents
+Return concatenated text
+Create parsers/EPUBParser.java
+Use epub4j to parse EPUB files
+Extract text from all chapters
+Return formatted text
+Create parsers/DOCParser.java
+Use Apache POI to parse DOC/DOCX files
+Extract text content
+Handle formatting preservation
+Create parsers/TextExtractor.java
+Simple text file reader for TXT files
+UTF-8 encoding support
+Phase 4: Reading Modes (Model Generation)
+Create BionicReadingPanel.java
+JPanel with JTextPane for formatted display
+User input for bold letter count (2-4)
+Method to process text: split words, bold first N letters
+Display formatted text with HTML styling
+Scrollable text area
+Create SpeedReadingPanel.java
+JPanel with large text display (JLabel)
+WPM input field (up to 1000)
+Start/Pause/Stop controls
+Timer-based word display
+Word-by-word progression
+Centered, large font display
+Phase 5: Integration & Polish (Model Generation)
+Wire components together
+Connect file upload to DocumentParser
+Pass extracted text to both reading panels
+Handle file selection errors gracefully
+Add error handling
+Invalid file format messages
+File read errors
+Parsing exceptions
+Create README.md
+Setup instructions
+Usage guide
+Dependencies list
+Technical Details
+Bionic Reading Implementation
+Split text into words
+For each word, wrap first N letters (2-4) in <b> tags
+Use JTextPane with HTML content type
+Preserve line breaks and paragraphs
+Speed Reading Implementation
+Split text into words array
+Calculate delay: 60000 / wpm milliseconds per word
+Use javax.swing.Timer for word progression
+Display one word at a time, centered
+Large font (24-36pt) for readability
+File Format Support
+TXT: Direct file reading
+PDF: PDFBox text extraction
+EPUB: epub4j chapter extraction
+DOC/DOCX: Apache POI text extraction
+User Actions Required
+Create Maven project in IntelliJ IDEA
+Wait for Maven dependencies to download
+Run the application from IntelliJ
+Model Actions Required
+Generate all Java source files
+Create pom.xml with dependencies
+Create README.md with instructions
